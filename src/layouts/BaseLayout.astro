@@ -21,6 +21,13 @@ const gaId = import.meta.env.PUBLIC_GA_ID || 'G-CK9SB0ZMYP';
       <script is:inline define:vars={{ gaId }}>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
+        const cookieConsent = localStorage.getItem('doodle_cookie_consent');
+        gtag('consent', 'default', {
+          analytics_storage: cookieConsent === 'accepted' ? 'granted' : 'denied',
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+        });
         gtag('js', new Date());
         gtag('config', gaId);
       </script>
@@ -52,5 +59,44 @@ const gaId = import.meta.env.PUBLIC_GA_ID || 'G-CK9SB0ZMYP';
   </head>
   <body>
     <slot />
+    <div class="cookie-consent" id="cookieConsent" hidden>
+      <div class="cookie-consent__copy">
+        <strong>Cookie settings</strong>
+        <span>We use analytics cookies to understand how people use this site. You can accept or decline.</span>
+      </div>
+      <div class="cookie-consent__actions">
+        <button class="cookie-consent__btn cookie-consent__btn--ghost" type="button" data-cookie-choice="declined">Decline</button>
+        <button class="cookie-consent__btn" type="button" data-cookie-choice="accepted">Accept</button>
+      </div>
+    </div>
+    <script is:inline>
+      (() => {
+        const banner = document.getElementById('cookieConsent');
+        const storageKey = 'doodle_cookie_consent';
+        const choice = localStorage.getItem(storageKey);
+
+        if (!banner || choice) return;
+
+        banner.hidden = false;
+
+        banner.querySelectorAll('[data-cookie-choice]').forEach((button) => {
+          button.addEventListener('click', () => {
+            const value = button.getAttribute('data-cookie-choice');
+            localStorage.setItem(storageKey, value);
+
+            if (window.gtag) {
+              window.gtag('consent', 'update', {
+                analytics_storage: value === 'accepted' ? 'granted' : 'denied',
+                ad_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied',
+              });
+            }
+
+            banner.hidden = true;
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
