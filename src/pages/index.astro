@@ -1,0 +1,677 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout>
+<!-- NAV -->
+<nav>
+  <div class="nav-in">
+    <a class="logo-mark" href="#top" aria-label="Doodle Noodle Studio home">
+      <img class="logo-light" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264185/Doodle_Noodle_-_White_kxecg9.png" alt="Doodle Noodle Studio">
+      <img class="logo-dark" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264191/Doodle_Noodle_-_Black_cewox5.png" alt="Doodle Noodle Studio">
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#work">Our Work</a>
+      <a href="#process">Process</a>
+      <a href="#about">Team</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle light mode">
+        <span class="tt-body">
+          <span class="tt-dial"></span>
+          <span class="tt-mark on">ON</span>
+          <span class="tt-mark off">OFF</span>
+        </span>
+      </button>
+      <a class="nav-cta" href="#contact">Book a free call
+        <span class="cta-dot"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <!-- scribble doodles replacing SVG scribbles -->
+  <img class="hero-doodle hd1" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781272371/Artboard_2_copy_5_ht7xdb.png" alt="" aria-hidden="true">
+  <img class="hero-doodle hd2" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781272372/Artboard_2_copy_4_xtypnk.png" alt="" aria-hidden="true">
+  <img class="hero-doodle hd3" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781272371/Artboard_2_copy_2_zepxia.png" alt="" aria-hidden="true">
+  <img class="hero-doodle hd4" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781272370/Artboard_2_copy_3_enbdc1.png" alt="" aria-hidden="true">
+
+  <div class="wrap hero-top">
+    <h1>Interview-style videos for businesses that want clients to <span class="hl">trust them</span> before they even call.</h1>
+    <p class="hero-sub">Natural interview-style videos that make your business feel human, trustworthy, and professional. No fake scripts. No awkward acting. No cheesy ads. <span class="scribble" style="color:var(--cream)">Just real conversations.</span></p>
+    <div class="hero-cta">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="btn btn-ghost" href="#work">See our work</a>
+    </div>
+  </div>
+
+  <!-- hero video module: fanned 3 cards -->
+  <div class="wrap">
+    <div class="hero-cards">
+      <div class="hc left">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/Video%208.mp4" muted loop playsinline preload="metadata"></video>
+        <button class="hc-mute" aria-label="Toggle sound"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6v4h2.5L9 13V3L5.5 6H3z" fill="#fff"/><path d="M11 6c.8.8.8 3.2 0 4" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg></button>
+        <span class="hc-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </div>
+      <div class="hc center">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/reel%204%20wayne%20vers%202.mp4" muted loop playsinline preload="metadata"></video>
+        <button class="hc-mute" aria-label="Toggle sound"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6v4h2.5L9 13V3L5.5 6H3z" fill="#fff"/><path d="M11 6c.8.8.8 3.2 0 4" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg></button>
+        <span class="hc-social ig" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1782802479/Instagram_logo_2022_oevaft.svg" alt="Instagram"></span>
+        <span class="hc-social tt" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1782802518/Tiktok_icon_cv3eel.svg" alt="TikTok"></span>
+        <span class="hc-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </div>
+      <div class="hc right">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/%D7%90%D7%99%D7%A0%D7%94%20%D7%A1%D7%A8%D7%98%D7%95%D7%9F%202.mp4" muted loop playsinline preload="metadata"></video>
+        <button class="hc-mute" aria-label="Toggle sound"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6v4h2.5L9 13V3L5.5 6H3z" fill="#fff"/><path d="M11 6c.8.8.8 3.2 0 4" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg></button>
+        <span class="hc-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HUMAN / PROBLEM -->
+<section class="human sec-pad">
+  <div class="wrap human-grid">
+    <div class="rv">
+      <span class="kicker">The problem</span>
+      <h2 class="h2">You already know your business is good.</h2>
+      <span class="scribble-note">…so why isn't the phone ringing?</span>
+      <p style="margin-top:1.4rem">But the problem is simple: people don't know you yet. They don't know your story. They don't know how you work. They don't know why they should choose you instead of the next clinic, lawyer, realtor, beauty studio, or local business.</p>
+      <p class="big">That's where we come in.</p>
+      <div class="no-row">
+        <span class="chip">no fake scripts</span>
+        <span class="chip">no awkward acting</span>
+        <span class="chip">no cheesy ads</span>
+      </div>
+      <p>Just real conversations, smart questions, beautiful filming, and videos that help people understand who you are.</p>
+    </div>
+    <div class="human-photos rv">
+      <div class="ph"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781314833/DSC02169_jcf6cp.jpg" alt="On set with Doodle Noodle Studio" loading="lazy"></div>
+      <div class="ph"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781314819/IMG_20230811_175711_ex0hsm.jpg" alt="Behind the scenes" loading="lazy"></div>
+      <div class="ph"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781314628/IMG_2693_qklkuo.jpg" alt="Interview filming" loading="lazy"></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-cta rv">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="trust-line"><span class="tdot"></span><b>No awkward acting</b> we guide the whole conversation</span>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS / IMAGINE BENTO -->
+<section class="benefits sec-pad">
+  <div class="wrap">
+    <div class="ben-head rv">
+      <span class="kicker" style="justify-content:center">One filming day</span>
+      <h2 class="h2">Imagine 10–15 videos from <span style="color:var(--orange-l)">one</span> filming day</h2>
+      <p class="lead">Videos that answer your clients' real questions. Videos that show your personality. <span class="scribble" style="color:var(--cream)">Videos that make people feel like they already know you.</span></p>
+    </div>
+
+    <div class="bento">
+      <!-- LEFT COLUMN: stats card -->
+      <div class="bento-card b-stats rv" style="display:flex;flex-direction:column">
+        <h3 class="bento-h">Content built to drive results that matter</h3>
+        <div class="stat-pills">
+          <span class="stat-pill"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H5M10 3V8" stroke="#F0305A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Avg watch time 32%</span>
+          <span class="stat-pill"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H5M10 3V8" stroke="#F0305A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Engagement rate 45%</span>
+        </div>
+        <div class="bar-chart">
+          <span class="bar-badge">10–15 videos</span>
+          <div class="bar" style="height:30%"></div>
+          <div class="bar" style="height:42%"></div>
+          <div class="bar" style="height:55%"></div>
+          <div class="bar" style="height:50%"></div>
+          <div class="bar" style="height:68%"></div>
+          <div class="bar" style="height:80%"></div>
+          <div class="bar" style="height:100%"></div>
+        </div>
+      </div>
+
+      <!-- MIDDLE-TOP: wide card with text only -->
+      <div class="bento-card b-image rv" style="background:linear-gradient(135deg,var(--ink3) 0%,var(--ink2) 100%);display:flex;align-items:flex-end;padding:1.8rem">
+        <div style="position:relative;z-index:2">
+          <div class="bi-cap" style="position:static;font-size:clamp(1.6rem,3vw,2.6rem)">Professional, natural, human edits</div>
+        </div>
+      </div>
+
+      <!-- LEFT COLUMN: revenue card -->
+      <div class="bento-card b-rev rv">
+        <span class="rev-ico"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="6" width="16" height="10" rx="2" stroke="#F5F0E8" stroke-width="1.5"/><circle cx="11" cy="11" r="2.5" stroke="#F5F0E8" stroke-width="1.5"/></svg></span>
+        <span class="rev-num">1,000+</span>
+        <span class="rev-lbl">Clients served abroad</span>
+      </div>
+
+      <!-- MIDDLE-BOTTOM: platforms card (spans 2 rows) -->
+      <div class="bento-card b-platforms rv">
+        <div class="plat-cloud">
+          <span class="plat-ico" title="LinkedIn"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M4 6.5H1.5V15H4V6.5zM2.75 5.3a1.45 1.45 0 100-2.9 1.45 1.45 0 000 2.9zM16.5 15h-2.5v-4.2c0-1-.02-2.3-1.4-2.3s-1.6 1.1-1.6 2.2V15H8.5V6.5H11v1.16h.03c.35-.66 1.2-1.36 2.46-1.36 2.63 0 3.12 1.73 3.12 3.98V15z"/></svg></span>
+          <span class="plat-ico" title="YouTube"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M16.5 5.6a1.9 1.9 0 00-1.35-1.35C13.95 4 9 4 9 4s-4.95 0-6.15.25A1.9 1.9 0 001.5 5.6 19.8 19.8 0 001.25 9c0 1.15.08 2.3.25 3.4a1.9 1.9 0 001.35 1.35C4.05 14 9 14 9 14s4.95 0 6.15-.25a1.9 1.9 0 001.35-1.35c.17-1.1.25-2.25.25-3.4s-.08-2.3-.25-3.4zM7.4 11.2V6.8L11.2 9l-3.8 2.2z"/></svg></span>
+          <span class="plat-ico" title="Vimeo"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M16 5.6c-.07 1.55-1.15 3.68-3.24 6.37C10.6 14.78 8.8 16.2 7.34 16.2c-.9 0-1.67-.84-2.3-2.5-.42-1.55-.84-3.1-1.26-4.65-.47-1.66-.97-2.5-1.5-2.5-.12 0-.52.24-1.2.72L.32 6.3c.85-.75 1.7-1.5 2.53-2.25 1.15-1 2-1.52 2.6-1.58 1.4-.13 2.26.83 2.58 2.88.35 2.2.6 3.58.73 4.12.4 1.8.83 2.7 1.3 2.7.37 0 .92-.58 1.66-1.74.73-1.16 1.12-2.04 1.17-2.65.1-.92-.27-1.38-1.1-1.38-.4 0-.8.1-1.22.27.8-2.63 2.34-3.9 4.6-3.84 1.67.05 2.46 1.14 2.36 3.26z"/></svg></span>
+          <span class="plat-ico" title="Instagram"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="3" y="3" width="12" height="12" rx="3.5" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="12.8" cy="5.2" r="0.9" fill="currentColor"/></svg></span>
+          <span class="plat-ico" title="Facebook"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M10.5 16v-6h2l.4-2.4h-2.4V6.1c0-.7.2-1.18 1.2-1.18h1.3V2.8c-.23-.03-1-.1-1.9-.1-1.9 0-3.2 1.16-3.2 3.28V7.6H5.6V10h2v6h2.9z"/></svg></span>
+          <span class="plat-ico" title="TikTok"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M12 2.5c.3 2 1.8 3.2 3.6 3.3v2.5c-1.4 0-2.7-.45-3.6-1.2v5.6c0 2.5-2 4.5-4.5 4.5S3 15.2 3 12.7s2-4.5 4.5-4.5c.27 0 .53.02.78.07v2.6c-.25-.1-.5-.15-.78-.15-1.13 0-2 .9-2 2s.87 2 2 2 2-.9 2-2V2.5H12z"/></svg></span>
+          <span class="plat-ico" title="Snapchat"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M9 2.5c1.9 0 3.2 1.5 3.2 3.4 0 .6 0 1.1.1 1.5.3.2.7.2 1 .1.5-.1.9.5.5.9-.3.3-1 .5-1.2.9-.2.6 1.3 2.4 2.6 2.7.3.1.3.5 0 .7-.5.3-1.4.3-1.7.7-.1.2 0 .6-.3.7-.4.1-1-.3-1.7-.1-.6.2-1.1 1-2.6 1s-2-.8-2.6-1c-.7-.2-1.3.2-1.7.1-.3-.1-.2-.5-.3-.7-.3-.4-1.2-.4-1.7-.7-.3-.2-.3-.6 0-.7 1.3-.3 2.8-2.1 2.6-2.7-.2-.4-.9-.6-1.2-.9-.4-.4 0-1 .5-.9.3.1.7.1 1-.1.1-.4.1-.9.1-1.5C5.8 4 7.1 2.5 9 2.5z"/></svg></span>
+          <span class="plat-ico" title="YouTube Shorts"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M11.5 3.2L5.8 6.3c-1.5.8-1.9 2.6-1 4 .4.6 1 1 1.7 1.2l-.9.5c-1.5.8-1.9 2.6-1 4s2.7 1.7 4.1.9l5.7-3.1c1.5-.8 1.9-2.6 1-4-.4-.6-1-1-1.7-1.2l.9-.5c1.5-.8 1.9-2.6 1-4s-2.6-1.9-4.1-1.1zM7.5 11V7l3.5 2-3.5 2z"/></svg></span>
+          <span class="plat-ico" title="X"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M9.5 7l4-5h-1.2L9 5.9 6.3 2H3l4.2 6L3 14h1.2L8 9.7l3 4.3h3.3L9.5 7zm-1.3 1.5l-.5-.6L4.5 3h1.4l3 4.3.5.6 3.6 5.1h-1.4L8.2 8.5z"/></svg></span>
+        </div>
+        <h3>Optimized for every platform, every format</h3>
+        <p>Every video is adapted to fit the platform, format, and audience it's made for.</p>
+      </div>
+      <!-- RIGHT col: direction card -->
+      <div class="bento-card b-quick rv">
+        <h3>Natural direction on camera</h3>
+        <p>You don't memorize anything we guide you so every answer feels natural.</p>
+        <div class="clock" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-cta rv">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="trust-line"><span class="tdot"></span><b>One filming day</b> → weeks of content for every platform</span>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="work sec-pad" id="work">
+  <div class="wrap">
+    <div class="work-head">
+      <div class="rv">
+        <span class="kicker">Our work</span>
+        <h2 class="h2">Real businesses.<br>Real conversations.</h2>
+      </div>
+    </div>
+        <div class="work-grid">
+      <article class="proj rv" data-src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/reel%204%20wayne%20vers%202.mp4">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/reel%204%20wayne%20vers%202.mp4" muted loop playsinline preload="metadata"></video>
+        <span class="proj-tag">Interview</span>
+        <span class="proj-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </article>
+      <article class="proj rv" data-src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/Video%202%20daniel%20.mp4">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/Video%202%20daniel%20.mp4" muted loop playsinline preload="metadata"></video>
+        <span class="proj-tag">Founder story</span>
+        <span class="proj-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </article>
+      <article class="proj rv" data-src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/Video%208.mp4">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/Video%208.mp4" muted loop playsinline preload="metadata"></video>
+        <span class="proj-tag">Client</span>
+        <span class="proj-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </article>
+      <article class="proj rv" data-src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/%D7%90%D7%99%D7%A0%D7%94%20%D7%A1%D7%A8%D7%98%D7%95%D7%9F%202.mp4">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/%D7%90%D7%99%D7%A0%D7%94%20%D7%A1%D7%A8%D7%98%D7%95%D7%9F%202.mp4" muted loop playsinline preload="metadata"></video>
+        <span class="proj-tag">Brand</span>
+        <span class="proj-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </article>
+      <article class="proj rv" data-src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/%D7%A7%D7%9E%D7%A4%D7%99%D7%99%D7%9F%20-%D7%90%D7%A8%D7%99%D7%90%D7%9C%D7%94%20%D7%A1%D7%A8%D7%98%D7%95%D7%9F%209%20%D7%92%D7%A8%D7%A1%D7%94%20%D7%92%20%281%29.mp4">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/%D7%A7%D7%9E%D7%A4%D7%99%D7%99%D7%9F%20-%D7%90%D7%A8%D7%99%D7%90%D7%9C%D7%94%20%D7%A1%D7%A8%D7%98%D7%95%D7%9F%209%20%D7%92%D7%A8%D7%A1%D7%94%20%D7%92%20%281%29.mp4" muted loop playsinline preload="metadata"></video>
+        <span class="proj-tag">Campaign</span>
+        <span class="proj-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </article>
+      <article class="proj rv" data-src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/reel%209%20wayne.mp4">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/reel%209%20wayne.mp4" muted loop playsinline preload="metadata"></video>
+        <span class="proj-tag">Short-form</span>
+        <span class="proj-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </article>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-cta rv">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="trust-line"><span class="tdot"></span>Real businesses, <b>real results</b> see yourself here next</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process sec-pad" id="process">
+  <div class="wrap">
+    <div class="proc-head rv">
+      <span class="kicker" style="justify-content:center">How it works</span>
+      <h2 class="h2">Four steps. Zero stress.</h2>
+      <p class="lead" style="margin-top:1rem">You don't need to memorize anything. We guide you through the interview so your answers sound natural, clear, and confident.</p>
+    </div>
+  </div>
+
+  <div class="film-rail">
+    <!-- top perforations continuous film holes (desktop) -->
+    <div class="perf-strip perf-desktop" aria-hidden="true">
+      <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+    </div>
+
+    <div class="frames-grid">
+      <div class="perf-strip perf-mobile" aria-hidden="true">
+        <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+      </div>
+      <div class="film-frame rv">
+        <div class="fn" aria-hidden="true"><span class="fc">01</span>A001 · DISC CALL · +5</div>
+        <div class="frame-inner">
+          <span class="step-n">01</span>
+          <h3>Discovery Call</h3>
+          <p>We learn about your business, your clients, your services, and what makes you different.</p>
+          <span class="scribble-tag">just a chat free!</span>
+        </div>
+        <div aria-hidden="true"></div>
+      </div>
+
+      <div class="perf-strip perf-mobile" aria-hidden="true">
+        <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+      </div>
+      <div class="film-frame rv">
+        <div class="fn" aria-hidden="true"><span class="fc">02</span>A002 · STRATEGY · +5</div>
+        <div class="frame-inner">
+          <span class="step-n">02</span>
+          <h3>Content Strategy</h3>
+          <p>We build the questions and topics based on what your future clients actually want to know.</p>
+          <span class="scribble-tag">their real questions</span>
+        </div>
+        <div aria-hidden="true"></div>
+      </div>
+
+      <div class="perf-strip perf-mobile" aria-hidden="true">
+        <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+      </div>
+      <div class="film-frame rv">
+        <div class="fn" aria-hidden="true"><span class="fc">03</span>A003 · FILM DAY · +5</div>
+        <div class="frame-inner">
+          <span class="step-n">03</span>
+          <h3>Filming Day</h3>
+          <p>We come with the camera, lights, sound, and direction. We guide you through the whole interview.</p>
+          <span class="scribble-tag">no script, no acting</span>
+        </div>
+        <div aria-hidden="true"></div>
+      </div>
+
+      <div class="perf-strip perf-mobile" aria-hidden="true">
+        <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+      </div>
+      <div class="film-frame rv">
+        <div class="fn" aria-hidden="true"><span class="fc">04</span>A004 · EDITING · +5</div>
+        <div class="frame-inner">
+          <span class="step-n">04</span>
+          <h3>Editing</h3>
+          <p>We turn the footage into short, powerful videos for social media ready-to-post and trustworthy.</p>
+          <span class="scribble-tag">straight to your inbox</span>
+        </div>
+        <div aria-hidden="true"></div>
+      </div>
+
+      <div class="perf-strip perf-mobile perf-mobile-last" aria-hidden="true">
+        <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+      </div>
+    </div>
+
+    <!-- bottom perforations continuous film holes (desktop) -->
+    <div class="perf-strip perf-desktop" aria-hidden="true">
+      <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-cta rv">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="trust-line"><span class="tdot"></span><b>Free</b> discovery call no scripts, no pressure</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section class="gets sec-pad">
+  <div class="wrap gets-grid">
+    <div class="rv">
+      <span class="kicker">What you get</span>
+      <h2 class="h2">One day of filming, weeks of content</h2>
+      <ul class="gets-list">
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>10–15 short videos</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Interview-style content</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Professional filming</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Clean sound and lighting</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Social media edits</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>B-roll footage</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Natural direction on camera</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>A clear content plan</li>
+      </ul>
+    </div>
+    <div class="callsheet rv">
+      <div class="cs-top" aria-hidden="true"></div>
+      <span class="cs-scribble">a typical day ✦</span>
+      <div class="cs-body">
+        <div class="cs-head">
+          <span class="scene">Scene 01 · Filming day</span>
+          <span class="take">take 1 action!</span>
+        </div>
+        <ul class="timeline">
+          <li><span class="t-label">Coffee &amp; warm-up</span><span class="t-time">09:00</span></li>
+          <li><span class="t-label">Interview · your story</span><span class="t-time">09:45</span></li>
+          <li><span class="t-label">Interview · client Q&amp;A</span><span class="t-time">11:30</span></li>
+          <li><span class="t-label">B-roll · you at work</span><span class="t-time">13:30</span></li>
+          <li><span class="t-label">That's a wrap</span><span class="t-time">15:00</span></li>
+          <li class="final"><span class="t-label">You receive</span><span class="t-time">10–15 videos ✦</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-cta rv">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="trust-line"><span class="tdot"></span><b>10–15 ready-to-post videos</b> from a single filming day</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about sec-pad" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photos rv">
+      <div class="ph"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781314681/IMG_0970_ojaxxe.jpg" alt="Artium and Stella" loading="lazy"></div>
+      <div class="ph"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781314833/DSC02169_jcf6cp.jpg" alt="On set" loading="lazy"></div>
+      <div class="ph"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781314628/IMG_2693_qklkuo.jpg" alt="Behind the scenes" loading="lazy"></div>
+    </div>
+    <div class="rv">
+      <span class="kicker">We're Artium &amp; Stella</span>
+      <div class="scribble-stack">
+        <span class="ss-line">a husband-and-wife</span>
+        <span class="ss-line">video team ✦</span>
+      </div>
+      <p style="margin-top:1rem">A husband-and-wife team behind DoodleNoodle Studios. <span class="stat">We've worked with over 1,000 clients abroad</span> and now we're building our business here in Toronto.</p>
+      <p>Our style is simple: we don't just make videos look good. We help business owners explain who they are, what they do, and why people should trust them.</p>
+      <p>You don't need to be "good on camera." That's our job. We ask the right questions. We guide the conversation. We help you say things in a way that feels natural. Most business owners already have the right message inside them <span class="scribble" style="color:var(--orange-l)">they just need someone to pull it out.</span></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-cta rv">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="trust-line"><span class="tdot"></span>Trusted by <b>1,000+ clients</b> now filming in Toronto &amp; the GTA</span>
+    </div>
+  </div>
+</section>
+
+<!-- REASSURE -->
+<section class="reassure sec-pad">
+  <div class="wrap rv">
+    <h2>You don't need to be "good on camera."</h2>
+    <div class="scribble-note">that's literally our job →</div>
+    <p>We ask the right questions, guide the conversation, and help you say things in a way that feels natural. The right message is already inside you we just pull it out.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact sec-pad" id="contact">
+  <div class="wrap contact-grid">
+    <div class="rv">
+      <span class="kicker">Let's talk</span>
+      <h2 class="h2">Ready to turn one filming day into content for your business?</h2>
+      <div class="scribble-note">no pitch just a conversation ✦</div>
+      <p class="lead">Let's create videos that help people know you, trust you, and choose you. Book a free discovery call with DoodleNoodle Studios.</p>
+      <div class="socials">
+        <a href="mailto:stella@doodlenoodleca.com"><span class="si"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><rect x="1.5" y="3" width="12" height="9" rx="1.5" stroke="#F5F0E8" stroke-width="1.3"/><path d="M1.5 4.5L7.5 8.5l6-4" stroke="#F5F0E8" stroke-width="1.3" stroke-linecap="round"/></svg></span>stella@doodlenoodleca.com</a>
+      </div>
+    </div>
+    <div class="booking-card rv" aria-label="Book a free discovery call">
+      <iframe class="booking-frame" src="https://api.leadconnectorhq.com/widget/booking/R1XIMTwlssFPloeb9enF" scrolling="no" id="R1XIMTwlssFPloeb9enF_1782722165750" title="Book a free discovery call"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <div class="foot-logo-wrap">
+      <img class="logo-light" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264185/Doodle_Noodle_-_White_kxecg9.png" alt="Doodle Noodle Studio">
+      <img class="logo-dark" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264191/Doodle_Noodle_-_Black_cewox5.png" alt="Doodle Noodle Studio">
+    </div>
+    <span class="foot-tag">Stories that help brands grow ✦</span>
+    <a class="foot-tcg" href="https://talkerstein.com/" target="_blank" rel="noopener" aria-label="TCG">
+      <img class="foot-tcg-badge" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1779888916/TCG_-_Logo_-_XS_-_Horizontal_i8ndvp.png" alt="TCG">
+      <img class="foot-tcg-badge-dark" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1778597340/TCG_-_Logo_-_XS_-_Horizontal_a6mqzy.svg" alt="TCG">
+    </a>
+  </div>
+</footer>
+
+<!-- FULLSCREEN MOBILE MENU -->
+<div class="fs-menu" id="fsMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <button class="fs-close" id="fsClose" aria-label="Close menu">✕</button>
+  <a href="#work"    onclick="closeFsMenu()">Our Work</a>
+  <a href="#process" onclick="closeFsMenu()">Process</a>
+  <a href="#about"   onclick="closeFsMenu()">Team</a>
+  <a href="#contact" class="fs-cta" onclick="closeFsMenu()">Book a free call</a>
+  <div style="margin-top:.5rem">
+    <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle light/dark mode">
+      <span class="tt-body">
+        <span class="tt-dial"></span>
+        <span class="tt-mark on">ON</span>
+        <span class="tt-mark off">OFF</span>
+      </span>
+    </button>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Video viewer">
+  <div class="lb-inner" id="lbInner">
+    <video id="lbVideo" playsinline preload="metadata"></video>
+    <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+    <button class="lb-sound" id="lbSound" aria-label="Toggle sound">
+      <svg id="lbSoundIcon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6v4h2.5L9 13V3L5.5 6H3z" fill="#fff"/><path d="M11 6c.8.8.8 3.2 0 4" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg>
+    </button>
+    <span class="lb-counter" id="lbCounter"></span>
+  </div>
+  <button class="lb-prev" id="lbPrev" aria-label="Previous video">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8l5 5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="lb-next" id="lbNext" aria-label="Next video">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</div>
+
+<script is:inline>
+// ── LIGHTBOX ──────────────────────────────────────────────────────────────
+const lb        = document.getElementById('lb');
+const lbVideo   = document.getElementById('lbVideo');
+const lbClose   = document.getElementById('lbClose');
+const lbSound   = document.getElementById('lbSound');
+const lbPrev    = document.getElementById('lbPrev');
+const lbNext    = document.getElementById('lbNext');
+const lbCounter = document.getElementById('lbCounter');
+
+let allSrcs = [];
+let currentIdx = 0;
+let isMuted = false;
+
+function openLb(idx) {
+  currentIdx = ((idx % allSrcs.length) + allSrcs.length) % allSrcs.length;
+  lbVideo.src = allSrcs[currentIdx];
+  lbVideo.muted = isMuted;
+  lbVideo.load();
+  lbVideo.play().catch(() => { lbVideo.muted = true; isMuted = true; updateSoundIcon(); lbVideo.play(); });
+  lbCounter.textContent = (currentIdx + 1) + ' / ' + allSrcs.length;
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLb() {
+  lb.classList.remove('open');
+  lbVideo.pause();
+  lbVideo.removeAttribute('src');
+  lbVideo.load();
+  document.body.style.overflow = '';
+}
+
+function navLb(dir) {
+  openLb(currentIdx + dir);
+}
+
+function updateSoundIcon() {
+  lbSound.innerHTML = isMuted
+    ? '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6v4h2.5L9 13V3L5.5 6H3z" fill="#fff"/><line x1="11" y1="6" x2="15" y2="10" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/><line x1="15" y1="6" x2="11" y2="10" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg>'
+    : '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6v4h2.5L9 13V3L5.5 6H3z" fill="#fff"/><path d="M11 6c.8.8.8 3.2 0 4" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg>';
+}
+
+lbClose.addEventListener('click', closeLb);
+lb.addEventListener('click', (e) => { if (e.target === lb) closeLb(); });
+lbPrev.addEventListener('click', () => navLb(-1));
+lbNext.addEventListener('click', () => navLb(1));
+lbSound.addEventListener('click', () => {
+  isMuted = !isMuted;
+  lbVideo.muted = isMuted;
+  updateSoundIcon();
+});
+document.addEventListener('keydown', (e) => {
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape')      closeLb();
+  if (e.key === 'ArrowRight')  navLb(1);
+  if (e.key === 'ArrowLeft')   navLb(-1);
+});
+
+// ── Build the master video list from DOM (raw attribute, not resolved .src) ─
+function buildSrcs() {
+  const heroVids = [...document.querySelectorAll('.hc video')]
+    .map(v => v.getAttribute('src')).filter(Boolean);
+  const gridVids = [...document.querySelectorAll('.proj[data-src]')]
+    .map(c => c.dataset.src);
+  return heroVids.concat(gridVids);
+}
+
+// ── HERO CARDS — click to open lightbox ─────────────────────────────────────
+document.querySelectorAll('.hc').forEach((card, i) => {
+  card.style.cursor = 'pointer';
+  card.addEventListener('click', (e) => {
+    if (e.target.closest('.hc-mute')) return;
+    allSrcs = buildSrcs();
+    openLb(i);
+  });
+});
+
+// ── GRID CARDS — click to open lightbox ─────────────────────────────────────
+document.querySelectorAll('.proj[data-src]').forEach((card, i) => {
+  card.addEventListener('click', (e) => {
+    if (e.target.closest('.proj-mute')) return;
+    allSrcs = buildSrcs();
+    const heroCount = document.querySelectorAll('.hc video').length;
+    openLb(heroCount + i);
+  });
+});
+
+// ── MUTE BUTTONS (grid preview only — stops propagation so no lightbox) ──
+function bindMute(btn) {
+  const card = btn.closest('.proj') || btn.closest('.hc');
+  const v = card ? card.querySelector('video') : null;
+  if (!v) return;
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    v.muted = !v.muted;
+    if (!v.muted) v.play().catch(() => {});
+  });
+}
+document.querySelectorAll('.hc-mute').forEach(bindMute);
+
+// ── HAMBURGER MENU ─────────────────────────────────────────────────────────
+const hamburger = document.getElementById('hamburger');
+const fsMenu    = document.getElementById('fsMenu');
+const fsClose   = document.getElementById('fsClose');
+
+function openFsMenu() {
+  fsMenu.classList.add('open');
+  hamburger.classList.add('open');
+  hamburger.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+function closeFsMenu() {
+  fsMenu.classList.remove('open');
+  hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+hamburger?.addEventListener('click', () => {
+  fsMenu.classList.contains('open') ? closeFsMenu() : openFsMenu();
+});
+fsClose?.addEventListener('click', closeFsMenu);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && fsMenu.classList.contains('open')) closeFsMenu();
+});
+
+
+(function(){
+  const nav  = document.querySelector('nav');
+  const work = document.getElementById('work');
+  if (!nav || !work) return;
+
+  function isMobileGrid() {
+    return window.matchMedia('(max-width:820px)').matches;
+  }
+
+  const workObs = new IntersectionObserver(entries => {
+    if (!isMobileGrid()) return;
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        nav.style.transition = 'opacity .35s, transform .35s';
+        nav.style.opacity    = '0';
+        nav.style.transform  = 'translateX(-50%) scale(.96) translateY(-12px)';
+        nav.style.pointerEvents = 'none';
+      } else {
+        nav.style.opacity    = '1';
+        nav.style.transform  = 'translateX(-50%) scale(.96)';
+        nav.style.pointerEvents = '';
+      }
+    });
+  }, { threshold: 0.15 });
+
+  workObs.observe(work);
+
+  // reset on desktop resize
+  window.addEventListener('resize', () => {
+    if (!isMobileGrid()) {
+      nav.style.opacity = '1';
+      nav.style.transform = 'translateX(-50%) scale(.96)';
+      nav.style.pointerEvents = '';
+    }
+  });
+})();
+
+const io = new IntersectionObserver(es => {
+  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: .12 });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+// ── AUTOPLAY VIDEOS IN VIEW ────────────────────────────────────────────────
+const vObs = new IntersectionObserver(es => {
+  es.forEach(e => {
+    const v = e.target;
+    if (e.isIntersecting) v.play().catch(() => {});
+    else v.pause();
+  });
+}, { threshold: .25 });
+document.querySelectorAll('video').forEach(v => vObs.observe(v));
+
+// ── DSLR THEME TOGGLE ─────────────────────────────────────────────────────
+const toggle = document.getElementById('themeToggle');
+const toggleMobile = document.getElementById('themeToggleMobile');
+const root   = document.documentElement;
+if (localStorage.getItem('theme') === 'light') root.setAttribute('data-theme', 'light');
+
+function applyTheme(isLight) {
+  root[isLight ? 'setAttribute' : 'removeAttribute']('data-theme', 'light');
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+}
+
+toggle.addEventListener('click', () => applyTheme(root.getAttribute('data-theme') !== 'light'));
+toggleMobile?.addEventListener('click', () => applyTheme(root.getAttribute('data-theme') !== 'light'));
+
+</script>
+<script is:inline src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+</BaseLayout>
