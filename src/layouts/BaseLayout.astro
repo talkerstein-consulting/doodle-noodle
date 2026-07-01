@@ -2,8 +2,11 @@
 import '../styles/global.css';
 
 const {
-  title = 'Doodle Noodle Studio Stories That Help Brands Grow',
-  description = 'Interview-style videos for Toronto businesses that want clients to trust them before they even call.',
+  title = 'Doodle Noodle Studio | Interview Videos for Toronto Businesses',
+  description = 'Interview-style brand videos for Toronto businesses that want clients to know, trust, and choose them before they even call.',
+  canonicalUrl = 'https://doodlenoodleca.com/',
+  image = 'https://res.cloudinary.com/dr8iorhci/image/upload/c_fill,w_1200,h_630,g_auto,q_auto,f_auto/v1781314833/DSC02169_jcf6cp.jpg',
+  imageAlt = 'Doodle Noodle Studio filming interview-style brand videos on set',
 } = Astro.props;
 
 const gaId = import.meta.env.PUBLIC_GA_ID || 'G-CK9SB0ZMYP';
@@ -27,6 +30,22 @@ const gaId = import.meta.env.PUBLIC_GA_ID || 'G-CK9SB0ZMYP';
     <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" />
     <link rel="apple-touch-icon" href="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" />
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content="Doodle Noodle Studio" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:secure_url" content={image} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    <meta name="twitter:image:alt" content={imageAlt} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Shantell+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
