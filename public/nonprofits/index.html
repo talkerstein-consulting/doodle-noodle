@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doodle Noodle Studio Storytelling Videos for Nonprofits &amp; Community Organizations</title>
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png">
+<link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png">
+<link rel="apple-touch-icon" href="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png">
+<meta name="description" content="Interview-style videos for nonprofits and community organizations that want donors, volunteers, and supporters to believe in their mission.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Shantell+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#100E0C;
+  --ink2:#191612;
+  --ink3:#221E19;
+  --cream:#F0E8D8;
+  --cream2:#E8DDCA;
+  --orange:#DC2048;
+  --orange-l:#F0305A;
+  --blue:#2B4FCC;
+  --white:#F5F0E8;
+  --grey:#9A8F80;
+  --line:rgba(245,240,232,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--ink);color:var(--white);overflow-x:hidden}
+::selection{background:var(--orange);color:#fff}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+
+/* scribble font helper */
+.scribble{font-family:'Shantell Sans',cursive;font-weight:600}
+
+/* ── NAV (floating, compact) ── */
+nav{position:fixed;top:1.1rem;left:50%;transform:translateX(-50%) scale(.96);z-index:200;
+  background:rgba(16,14,12,.88);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  border:1px solid rgba(245,240,232,.1);border-radius:999px;
+  width:auto;max-width:calc(100% - 2.5rem);
+  box-shadow:0 8px 32px rgba(0,0,0,.45);
+  transition:transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s,background .3s;
+  transform-origin:top center}
+nav:hover{transform:translateX(-50%) scale(1);box-shadow:0 12px 40px rgba(0,0,0,.6);background:rgba(16,14,12,.96)}
+.nav-in{padding:.4rem .9rem .4rem 1.4rem;display:flex;align-items:center;gap:1.4rem}
+.logo-mark{display:flex;align-items:center;height:90px;flex:0 0 auto}
+.logo-mark img{display:block;height:86px;width:auto;max-width:none;object-fit:contain;flex:0 0 auto}
+.nav-links{display:flex;gap:1.4rem;align-items:center;font-size:.86rem;font-weight:500}
+.nav-links a{opacity:.7;transition:opacity .2s;color:var(--white)}
+.nav-links a:hover{opacity:1}
+.nav-cta{display:inline-flex;align-items:center;gap:.55rem;background:var(--orange);color:#fff!important;font-weight:700;font-size:.9rem;padding:.7rem 1rem;border-radius:99px;opacity:1!important;transition:transform .2s,background .2s;white-space:nowrap}
+.nav-cta .cta-dot{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;flex:none}
+.nav-cta:hover{transform:translateY(-1px);background:var(--orange-l)}
+@media(max-width:1080px){.nav-in{gap:.6rem;padding:.4rem .9rem .4rem 1.1rem}}
+@media(prefers-reduced-motion:reduce){nav{transform:translateX(-50%) scale(1);transition:none}}
+
+/* ── BADGE ── */
+.badge{display:inline-flex;align-items:center;gap:.55rem;border:1px solid var(--line);background:rgba(245,240,232,.04);padding:.45rem 1rem;border-radius:99px;font-size:.78rem;font-weight:500;letter-spacing:.04em;color:var(--cream)}
+.badge .dot{width:8px;height:8px;border-radius:50%;background:#54D27E;box-shadow:0 0 0 0 rgba(84,210,126,.5);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(84,210,126,.5)}70%{box-shadow:0 0 0 8px rgba(84,210,126,0)}100%{box-shadow:0 0 0 0 rgba(84,210,126,0)}}
+
+/* ── HERO ── */
+.hero{position:relative;padding:12rem 0 4rem;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-10%;left:50%;transform:translateX(-50%);width:120%;height:80%;background:radial-gradient(ellipse 50% 60% at 50% 0%,rgba(212,97,26,.16),transparent 70%);pointer-events:none}
+.hero-top{text-align:center;position:relative;z-index:3}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.1rem,5vw,4.4rem);line-height:1;letter-spacing:.01em;margin:1.5rem auto 0;max-width:22ch}
+.hero h1 .hl{color:var(--orange-l)}
+.hero-sub{margin:1.4rem auto 0;max-width:52ch;font-size:clamp(1rem,1.5vw,1.18rem);color:var(--grey);line-height:1.6}
+.hero-cta{margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:3}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-weight:700;font-size:.92rem;padding:.95rem 1.8rem;border-radius:99px;transition:transform .2s,background .2s,border-color .2s;cursor:pointer;border:none}
+.btn-pri{background:var(--orange);color:#fff}
+.btn-pri:hover{background:var(--orange-l);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--white);border:1px solid var(--line)}
+.btn-ghost:hover{border-color:var(--white)}
+.btn-arrow{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center}
+
+/* hero scribble doodles */
+.hero-doodle{position:absolute;z-index:2;pointer-events:none;filter:brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,.3))}
+.hd1{top:4.5rem;left:3%;width:clamp(120px,15vw,230px);transform:rotate(-8deg)}
+.hd2{top:5.5rem;right:3.5%;width:clamp(120px,15vw,230px);transform:rotate(10deg)}
+.hd3{top:19rem;left:1%;width:clamp(100px,12vw,190px);transform:rotate(6deg);opacity:.95}
+.hd4{top:20rem;right:1.5%;width:clamp(100px,12vw,190px);transform:rotate(-7deg);opacity:.95}
+@media(max-width:1100px){.hd1,.hd2{width:clamp(100px,12vw,160px)}}
+@media(max-width:900px){.hero-doodle{opacity:.55}.hd3,.hd4{display:none}}
+
+/* hero video module fanned 3-card (imitates ViralCut) */
+.hero-cards{margin-top:3.5rem;display:flex;justify-content:center;align-items:flex-start;gap:clamp(.5rem,2vw,2rem);position:relative;z-index:3;perspective:1400px}
+.hc{position:relative;flex:0 0 auto;width:clamp(150px,21vw,300px);aspect-ratio:9/16;border-radius:26px;overflow:hidden;background:#0a0806;
+  box-shadow:0 24px 60px rgba(0,0,0,.5),0 4px 12px rgba(0,0,0,.4);
+  border:6px solid #fff;transition:transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s}
+.hc video{width:100%;height:100%;object-fit:cover;display:block;border-radius:20px}
+/* fanned angles ALWAYS tilted, never straighten */
+.hc.left{transform:rotate(-8deg) translateY(38px)}
+.hc.center{transform:rotate(0deg) translateY(0);z-index:2}
+.hc.center{overflow:visible}
+.hc.center>video{border-radius:20px}
+.hc.right{transform:rotate(8deg) translateY(38px)}
+/* individual hover lifts the card a touch while KEEPING its tilt */
+.hc.left:hover{transform:rotate(-8deg) translateY(24px) scale(1.03);box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.hc.center:hover{transform:rotate(0deg) translateY(-12px) scale(1.03);box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.hc.right:hover{transform:rotate(8deg) translateY(24px) scale(1.03);box-shadow:0 30px 70px rgba(0,0,0,.6)}
+/* floating pill badges */
+.hc-pill{position:absolute;z-index:4;display:inline-flex;align-items:center;gap:.4rem;background:#fff;color:var(--orange);
+  font-family:'Shantell Sans',cursive;font-weight:700;font-size:clamp(.72rem,1vw,.95rem);padding:.4rem .85rem;border-radius:99px;
+  box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.hc-pill svg{flex:none}
+.pill-likes{top:1.2rem;left:-.6rem}
+.pill-views{bottom:2.4rem;right:-.6rem}
+.hc-mute{position:absolute;top:.7rem;right:.7rem;width:32px;height:32px;border-radius:50%;background:rgba(16,14,12,.55);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:5;cursor:pointer;border:none}
+/* social platform badges floating over hero cards */
+.hc-social{position:absolute;z-index:6;width:clamp(34px,4.4vw,46px);height:clamp(34px,4.4vw,46px);border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.28);pointer-events:none}
+.hc-social img{width:62%;height:62%;object-fit:contain}
+.hc-social.ig{top:-.7rem;right:-1.6rem}
+.hc-social.tt{bottom:-.7rem;left:-.7rem;background:#0a0806}
+.hc-social.tt img{width:64%;height:64%}
+@media(max-width:620px){
+  .hc-social{width:26px;height:26px}
+  .hc-social.ig{top:-.4rem;right:-.9rem}
+  .hc-social.tt{bottom:-.4rem;left:-.4rem}
+}
+@media(max-width:620px){
+  /* keep all 3 fan cards visible on mobile, just smaller */
+  .hero-cards{gap:.4rem;margin-top:2rem}
+  .hc{width:clamp(90px,27vw,160px)}
+  .pill-likes{top:.6rem;left:-.3rem;font-size:.65rem;padding:.3rem .6rem}
+  .pill-views{bottom:1.4rem;right:-.3rem;font-size:.65rem;padding:.3rem .6rem}
+}
+
+/* TikTok-style grid on mobile */
+@media(max-width:820px){
+  .work-grid{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    height:100svh;
+    overflow-y:scroll;
+    scroll-snap-type:y mandatory;
+    -webkit-overflow-scrolling:touch;
+    border-radius:0;
+    overscroll-behavior:contain;
+  }
+  .proj{
+    flex:none;
+    width:100%;
+    height:100svh;
+    aspect-ratio:unset;
+    border-radius:0;
+    border:1px solid var(--line);
+    scroll-snap-align:start;
+    scroll-snap-stop:always;
+  }
+  .proj:hover{transform:none}
+  .proj-tag{top:4.5rem}
+}
+
+/* service marquee under hero cards */
+.svc-marquee{margin-top:2.5rem;overflow:hidden;position:relative;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.svc-track{display:flex;white-space:nowrap;animation:svcscroll 30s linear infinite;width:max-content}
+.svc-track span{display:flex;align-items:center;font-size:clamp(1rem,1.4vw,1.25rem);font-weight:600;color:var(--cream)}
+.svc-track .svc-item{padding:0 1.6rem}
+.svc-track .dot{width:5px;height:5px;border-radius:50%;background:var(--orange)}
+@keyframes svcscroll{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.svc-track{animation:none}}
+
+/* ── MARQUEE ── */
+.marquee{background:var(--orange);color:var(--ink);overflow:hidden;padding:.85rem 0;margin-top:3.5rem;transform:rotate(-1.2deg) scale(1.04)}
+.marquee-track{display:flex;white-space:nowrap;animation:scroll 26s linear infinite;width:max-content}
+.marquee-track span{display:flex;align-items:center;font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.06em;padding:0 1.5rem}
+.marquee-track .star{font-size:1rem}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+/* ── SECTION SHARED ── */
+section{position:relative}
+.sec-pad{padding:clamp(4.5rem,10vh,8rem) 0}
+.kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-bottom:1rem}
+.h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.2rem,5.5vw,4.2rem);line-height:1;letter-spacing:.02em}
+.lead{color:var(--grey);font-size:1.05rem;line-height:1.7;max-width:54ch}
+
+/* ── PROBLEM / HUMAN ── */
+.human{background:var(--ink)}
+.human-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+@media(max-width:880px){.human-grid{grid-template-columns:1fr}}
+.human p{color:var(--grey);font-size:1.05rem;line-height:1.7;margin-bottom:1.1rem;max-width:50ch}
+.human .big{color:var(--white);font-weight:600;font-size:1.15rem}
+.human .no-row{display:flex;gap:.6rem;flex-wrap:wrap;margin:1.4rem 0}
+.no-row .chip{border:1px solid var(--line);border-radius:99px;padding:.4rem .9rem;font-size:.85rem;color:var(--cream);font-family:'Shantell Sans',cursive;font-weight:600}
+.human-photos{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.human-photos .ph{border-radius:14px;overflow:hidden;background:var(--ink3);aspect-ratio:4/5;position:relative}
+.human-photos .ph:first-child{grid-row:span 2;aspect-ratio:3/4}
+.human-photos img{width:100%;height:100%;object-fit:cover}
+.scribble-note{font-family:'Shantell Sans',cursive;font-weight:600;color:var(--orange-l);font-size:1.3rem;transform:rotate(-2deg);display:inline-block;margin-top:.5rem}
+
+/* ── BENEFITS / IMAGINE ── */
+.benefits{background:var(--ink2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ben-head{text-align:center;max-width:60ch;margin:0 auto 3rem}
+.ben-head .lead{margin:1rem auto 0}
+/* ── BENTO ── */
+.benefits{position:relative;overflow:hidden}
+/* diagonal line pattern background */
+.benefits::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background-image:repeating-linear-gradient(
+    135deg,
+    rgba(245,240,232,.04) 0px,
+    rgba(245,240,232,.04) 1px,
+    transparent 1px,
+    transparent 32px
+  );
+}
+.ben-head{text-align:center;max-width:60ch;margin:0 auto 2.5rem;position:relative;z-index:1}
+.ben-head .lead{margin:1rem auto 0}
+.bento{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto auto;gap:1.1rem;position:relative;z-index:1}
+/* value / how-we-help grid */
+.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:2.6rem}
+@media(max-width:820px){.value-grid{grid-template-columns:1fr}}
+.value-card{background:var(--ink2);border:1px solid var(--line);border-radius:20px;padding:1.8rem;transition:transform .3s,border-color .3s}
+.value-card:hover{transform:translateY(-3px);border-color:rgba(220,32,72,.35)}
+.value-card .vc-num{font-family:'Bebas Neue',sans-serif;font-size:2.6rem;line-height:.9;color:var(--orange);display:block;opacity:.9}
+.value-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:.02em;margin:.7rem 0 .6rem}
+.value-card p{color:var(--grey);font-size:.98rem;line-height:1.6}
+.value-card .vc-tag{font-family:'Shantell Sans',cursive;font-weight:600;color:var(--orange-l);font-size:.92rem;margin-top:.9rem;display:block;transform:rotate(-1.2deg)}
+[data-theme="light"] .value-card{background:var(--ink2);border-color:rgba(26,23,20,.1)}
+[data-theme="light"] .value-card:hover{border-color:rgba(220,32,72,.3)}
+[data-theme="light"] .value-card .vc-num{color:#DC2048}
+[data-theme="light"] .value-card .vc-tag{color:#F0305A}
+@media(max-width:900px){.bento{grid-template-columns:1fr 1fr;grid-template-rows:auto}}
+@media(max-width:560px){.bento{grid-template-columns:1fr}}
+.bento-card{background:var(--ink2);border:1px solid var(--line);border-radius:20px;padding:1.8rem;position:relative;overflow:hidden;transition:transform .3s,border-color .3s}
+.bento-card:hover{transform:translateY(-3px);border-color:rgba(220,32,72,.35)}
+/* layout slots */
+.b-stats{grid-column:1;grid-row:1;display:flex;flex-direction:column}
+.b-image{grid-column:2/4;grid-row:1;min-height:280px;padding:0;border:none;border-radius:20px}
+.b-rev{grid-column:1;grid-row:2;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem}
+.b-platforms{grid-column:2;grid-row:2;display:flex;flex-direction:column}
+.b-quick{grid-column:3;grid-row:2;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.7rem}
+@media(max-width:900px){
+  .b-stats{grid-column:1;grid-row:1}
+  .b-image{grid-column:2;grid-row:1;min-height:240px}
+  .b-rev{grid-column:1;grid-row:2}
+  .b-platforms{grid-column:2;grid-row:2}
+  .b-quick{grid-column:1/3;grid-row:3}
+}
+@media(max-width:560px){
+  .b-stats,.b-image,.b-rev,.b-platforms,.b-quick{grid-column:1;grid-row:auto}
+  .b-image{min-height:220px}
+}
+.b-dark{background:#0c0a08;border-color:rgba(245,240,232,.06)}
+/* stats card */
+.bento-card h3.bento-h{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;line-height:1.05;letter-spacing:.02em;margin-bottom:1.1rem}
+.stat-pills{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.2rem}
+.stat-pill{display:inline-flex;align-items:center;gap:.5rem;align-self:flex-start;background:rgba(245,240,232,.05);border:1px solid var(--line);border-radius:99px;padding:.4rem .9rem;font-size:.85rem;font-weight:500}
+.stat-pill svg{flex:none}
+.bar-chart{display:flex;align-items:flex-end;gap:.45rem;height:80px;position:relative;margin-top:auto}
+.bar{flex:1;background:linear-gradient(to top,rgba(245,240,232,.14),rgba(245,240,232,.04));border-radius:5px 5px 0 0}
+.bar:last-child{background:linear-gradient(to top,var(--orange),var(--orange-l))}
+.bar-badge{position:absolute;top:-6px;right:0;background:var(--orange);color:#fff;font-size:.7rem;font-weight:700;padding:.18rem .65rem;border-radius:99px}
+/* revenue card */
+.b-rev .rev-ico{width:44px;height:44px;border-radius:50%;background:rgba(245,240,232,.06);display:flex;align-items:center;justify-content:center;margin-bottom:.3rem}
+.b-rev .rev-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;line-height:1;color:var(--white)}
+.b-rev .rev-lbl{color:var(--grey);font-size:.88rem}
+/* video card */
+.b-image video,.b-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:20px}
+.b-image .bi-grad{position:absolute;inset:0;border-radius:20px;background:linear-gradient(to top,rgba(12,10,8,.88) 0%,rgba(12,10,8,.2) 50%,transparent 100%);z-index:1}
+.b-image .bi-cap{position:absolute;bottom:1.4rem;left:1.6rem;right:1.6rem;z-index:2;font-family:'Bebas Neue',sans-serif;font-size:clamp(1.4rem,2.8vw,2.2rem);letter-spacing:.02em;line-height:1;color:#fff}
+/* platforms card */
+.plat-cloud{flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:.55rem;align-content:center;justify-items:center;padding:.4rem 0 1.2rem;min-height:140px}
+.plat-ico{width:40px;height:40px;border-radius:50%;background:rgba(245,240,232,.06);display:flex;align-items:center;justify-content:center;color:var(--cream);transition:transform .25s,background .25s}
+.plat-ico:hover{transform:translateY(-3px);background:var(--orange);color:#fff}
+.plat-ico:nth-child(1){transform:translateY(6px)}
+.plat-ico:nth-child(3){transform:translateY(6px)}
+.plat-ico:nth-child(7){transform:translateY(-6px)}
+.plat-ico:nth-child(9){transform:translateY(-6px)}
+.b-platforms h3{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.02em;line-height:1;margin-bottom:.4rem}
+.b-platforms p{color:var(--grey);font-size:.85rem;line-height:1.5}
+/* quick/camera card */
+.b-quick h3{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:.02em;line-height:1.1}
+.b-quick p{color:var(--grey);font-size:.85rem;line-height:1.5;max-width:22ch}
+.clock{width:64px;height:64px;border-radius:50%;border:3px solid rgba(245,240,232,.15);position:relative;margin-top:.4rem}
+.clock::before,.clock::after{content:"";position:absolute;background:var(--white);border-radius:2px;transform-origin:bottom center}
+.clock::before{width:3px;height:22px;left:calc(50% - 1.5px);bottom:50%;transform:rotate(15deg)}
+.clock::after{width:3px;height:17px;left:calc(50% - 1.5px);bottom:50%;background:var(--orange);transform:rotate(110deg)}
+
+/* ── WORK / PROJECTS ── */
+.work{background:var(--ink)}
+.work-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+@media(max-width:820px){.work-grid{grid-template-columns:1fr 1fr}.work-grid::after{display:none}}
+@media(max-width:520px){.work-grid{grid-template-columns:1fr}.work-grid::after{display:none}}
+.proj{position:relative;aspect-ratio:9/16;border-radius:16px;overflow:hidden;background:#0a0806;border:1px solid var(--line);cursor:pointer;transition:transform .4s cubic-bezier(.22,1,.36,1)}
+.proj:hover{transform:translateY(-6px) scale(1.01)}
+.proj video{width:100%;height:100%;object-fit:cover}
+.proj-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(16,14,12,.85) 0%,transparent 45%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.2rem;z-index:2;pointer-events:none}
+.proj-tag{position:absolute;top:.9rem;left:.9rem;background:rgba(16,14,12,.65);backdrop-filter:blur(4px);border-radius:99px;padding:.3rem .8rem;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;z-index:3}
+
+.proj-meta{font-size:.82rem;color:var(--cream);font-weight:600}
+.proj-meta .scribble{color:var(--orange-l);font-size:1.05rem;display:block}
+/* play hint — branded logo icon fades in on hover */
+.proj-play-hint{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:3;opacity:0;transition:opacity .3s;pointer-events:none;background:rgba(10,8,6,.3)}
+.proj:hover .proj-play-hint{opacity:1}
+.proj-play-hint img{width:72px;height:72px;object-fit:contain;filter:drop-shadow(0 4px 16px rgba(0,0,0,.5));transition:transform .3s cubic-bezier(.22,1,.36,1)}
+.proj:hover .proj-play-hint img{transform:scale(1.08)}
+
+/* hero card branded play hint */
+.hc-play-hint{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:3;opacity:0;transition:opacity .3s;pointer-events:none;background:rgba(10,8,6,.25)}
+.hc:hover .hc-play-hint{opacity:1}
+.hc-play-hint img{width:64px;height:64px;object-fit:contain;filter:drop-shadow(0 4px 16px rgba(0,0,0,.5));transition:transform .3s cubic-bezier(.22,1,.36,1)}
+.hc:hover .hc-play-hint img{transform:scale(1.08)}
+
+/* ── LIGHTBOX ── */
+.lb{position:fixed;inset:0;z-index:2000;display:flex;align-items:center;justify-content:center;
+  background:rgba(10,8,6,.94);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  opacity:0;pointer-events:none;transition:opacity .3s}
+.lb.open{opacity:1;pointer-events:all}
+.lb-inner{position:relative;width:min(88vw,400px);aspect-ratio:9/16;border-radius:22px;overflow:hidden;
+  box-shadow:0 32px 80px rgba(0,0,0,.7);
+  transform:scale(.9) translateY(20px);transition:transform .4s cubic-bezier(.22,1,.36,1)}
+.lb.open .lb-inner{transform:scale(1) translateY(0)}
+.lb-inner video{width:100%;height:100%;object-fit:cover;display:block}
+.lb-close{position:absolute;top:.8rem;right:.8rem;z-index:3;width:36px;height:36px;border-radius:50%;
+  background:rgba(16,14,12,.75);backdrop-filter:blur(4px);border:1px solid rgba(245,240,232,.25);
+  display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:1rem;line-height:1;transition:background .2s}
+.lb-close:hover{background:var(--orange)}
+.lb-sound{position:absolute;bottom:.8rem;right:.8rem;z-index:3;width:36px;height:36px;border-radius:50%;
+  background:rgba(16,14,12,.75);backdrop-filter:blur(4px);border:1px solid rgba(245,240,232,.25);
+  display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s}
+.lb-sound:hover{background:var(--orange)}
+.lb-prev,.lb-next{position:absolute;top:50%;transform:translateY(-50%);z-index:3;
+  width:44px;height:44px;border-radius:50%;background:rgba(16,14,12,.75);
+  backdrop-filter:blur(4px);border:1px solid rgba(245,240,232,.2);
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+  color:#fff;transition:background .2s;flex:none}
+.lb-prev{left:-60px}
+.lb-next{right:-60px}
+.lb-prev:hover,.lb-next:hover{background:var(--orange)}
+.lb-counter{position:absolute;bottom:.9rem;left:50%;transform:translateX(-50%);
+  font-family:'Bebas Neue',sans-serif;font-size:.95rem;letter-spacing:.15em;
+  color:rgba(245,240,232,.6);z-index:3;user-select:none}
+@media(max-width:640px){.lb-prev{left:6px}.lb-next{right:6px}}
+
+/* ── PROCESS (film contact sheet) ── */
+.process{background:#0d0b08;border-top:1px solid rgba(245,240,232,.06);overflow:hidden;position:relative}
+.process::before{content:"";position:absolute;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='1' height='1' fill='rgba(245,240,232,.03)'/%3E%3C/svg%3E");
+  pointer-events:none}
+.proc-head{text-align:center;margin-bottom:3rem;position:relative;z-index:2}
+.proc-head .lead{margin:1rem auto 0}
+/* film strip rail */
+.film-rail{position:relative;z-index:2;padding:0 0 2rem}
+/* proper film perforation strip 4 holes aligned to 4 frames */
+/* continuous film perforation strip many evenly spaced holes */
+.perf-strip{display:flex;justify-content:space-between;gap:0;background:#0a0806;border-top:1px solid rgba(245,240,232,.08);border-bottom:1px solid rgba(245,240,232,.08);padding:.5rem clamp(1rem,2vw,1.5rem)}
+.hole{flex:none;width:20px;height:14px;border-radius:3px;background:#050403;border:1.5px solid rgba(245,240,232,.18);box-shadow:inset 0 1px 3px rgba(0,0,0,.7);}
+/* interleaved single-row strips only appear on mobile */
+.perf-mobile{display:none}
+@media(max-width:900px){.perf-strip{flex-wrap:nowrap;gap:.4rem;justify-content:space-between;overflow:hidden}}
+/* 4 frames grid */
+.frames-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:0 clamp(1rem,2vw,1.5rem)}
+@media(max-width:900px){.frames-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){
+  .frames-grid{display:block;grid-template-columns:1fr;padding:0}
+  .perf-desktop{display:none}
+  .perf-mobile{display:flex;flex-wrap:nowrap;justify-content:space-between;gap:.4rem;padding:.5rem clamp(1rem,4vw,1.5rem)}
+  .perf-mobile .hole{width:18px;height:12px}
+}
+.film-frame{position:relative;border:1px solid rgba(245,240,232,.12);background:#12100d;padding:2rem 1.6rem 1.6rem;transition:background .3s}
+.film-frame:hover{background:#1a1712}
+/* frame number strip all Bebas so 01 matches A001 */
+.fn{position:absolute;top:0;left:0;right:0;height:24px;background:rgba(245,240,232,.04);display:flex;align-items:center;padding:0 .8rem;gap:.5rem;font-family:'Bebas Neue',sans-serif;font-size:.9rem;letter-spacing:.12em;color:rgba(245,240,232,.35)}
+.fn .fc{font-family:'Bebas Neue',sans-serif;font-size:.9rem;letter-spacing:.12em;color:rgba(245,240,232,.55);margin-right:.3rem}
+/* corner marks like a viewfinder */
+.film-frame::after{content:"";position:absolute;bottom:0;left:0;right:0;height:22px;background:rgba(245,240,232,.04)}
+.frame-inner{padding-top:.6rem}
+.film-frame .step-n{font-family:'Bebas Neue',sans-serif;font-size:4rem;color:var(--orange);line-height:.9;display:block;opacity:.9}
+.film-frame h3{font-size:1.05rem;font-weight:700;margin:.7rem 0 .55rem;color:var(--white)}
+.film-frame p{color:var(--grey);font-size:.9rem;line-height:1.6}
+.film-frame .scribble-tag{font-family:'Shantell Sans',cursive;font-weight:600;color:var(--orange-l);font-size:.95rem;margin-top:.9rem;display:block;transform:rotate(-1.2deg)}
+/* exposure meter accent on active frame (01) */
+.film-frame:first-child{background:#161310}
+.film-frame:first-child .step-n{text-shadow:0 0 30px rgba(220,32,72,.35)}
+@media(max-width:480px){
+  .film-frame{border-left:1px solid rgba(245,240,232,.12);border-right:1px solid rgba(245,240,232,.12);border-top:none;border-bottom:none}
+}
+
+/* ── WHAT YOU GET ── */
+.gets{background:var(--ink)}
+.gets-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+@media(max-width:880px){.gets-grid{grid-template-columns:1fr}}
+.gets-list{list-style:none;margin-top:1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:.2rem}
+@media(max-width:480px){.gets-list{grid-template-columns:1fr}}
+.gets-list li{display:flex;gap:.8rem;align-items:flex-start;padding:.8rem 0;font-size:1.02rem;font-weight:500}
+.gets-list .tick{flex:none;width:22px;height:22px;border-radius:50%;background:rgba(212,97,26,.16);display:flex;align-items:center;justify-content:center;margin-top:.1rem}
+.gets-card{background:var(--ink2);border:1px solid var(--line);border-radius:18px;padding:2rem;position:relative}
+.gets-card .scribble-badge{position:absolute;top:-1rem;right:1.5rem;background:var(--orange);color:#fff;font-family:'Shantell Sans',cursive;font-weight:700;padding:.25rem 1rem;border-radius:99px;transform:rotate(3deg);font-size:1.05rem}
+.gets-card h3{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--grey);font-weight:700;margin-bottom:1.2rem}
+.gets-card ul{list-style:none}
+.gets-card li{display:flex;justify-content:space-between;gap:1rem;padding:.7rem 0;border-bottom:1px dashed var(--line);font-size:.94rem}
+.gets-card li:last-child{border:none}
+.gets-card li span{color:var(--grey)}
+/* creative clapperboard call-sheet */
+.callsheet{background:var(--ink2);border:1px solid var(--line);border-radius:18px;overflow:hidden;position:relative}
+.callsheet .cs-top{background:repeating-linear-gradient(135deg,var(--ink) 0 16px,var(--white) 16px 32px);height:30px}
+.callsheet .cs-body{padding:1.6rem 1.8rem 1.9rem}
+.callsheet .cs-scribble{position:absolute;top:.5rem;right:1.4rem;z-index:3;font-family:'Shantell Sans',cursive;font-weight:700;color:#fff;background:var(--orange);padding:.2rem .9rem;border-radius:99px;transform:rotate(3deg);font-size:1.05rem}
+.callsheet .cs-head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:1.3rem;flex-wrap:wrap}
+.callsheet .cs-head .scene{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;letter-spacing:.03em;line-height:1}
+.callsheet .cs-head .take{font-family:'Shantell Sans',cursive;font-weight:600;color:var(--orange-l);font-size:1rem}
+.timeline{list-style:none;position:relative;padding-left:1.5rem}
+.timeline::before{content:"";position:absolute;left:5px;top:6px;bottom:18px;width:2px;background:repeating-linear-gradient(var(--line) 0 4px,transparent 4px 8px)}
+.timeline li{position:relative;display:flex;justify-content:space-between;gap:1rem;padding:.6rem 0;font-size:.94rem}
+.timeline li::before{content:"";position:absolute;left:-1.5rem;top:.9rem;width:12px;height:12px;border-radius:50%;background:var(--ink2);border:2px solid var(--orange);transform:translateX(0)}
+.timeline li.final::before{background:var(--orange);box-shadow:0 0 0 4px rgba(212,97,26,.2)}
+.timeline li .t-label{color:var(--white);font-weight:600}
+.timeline li .t-time{color:var(--grey);font-variant-numeric:tabular-nums;font-family:'Shantell Sans',cursive;font-weight:600}
+.timeline li.final .t-label,.timeline li.final .t-time{color:var(--orange-l);font-weight:700}
+
+/* stacked scribble lines */
+.scribble-stack{display:flex;flex-direction:column;gap:.1rem;margin:1rem 0 1.4rem}
+.scribble-stack .ss-line{font-family:'Shantell Sans',cursive;font-weight:700;color:var(--orange-l);line-height:1.05;display:block;font-size:clamp(2.2rem,5vw,3.6rem)}
+.scribble-stack .ss-line:nth-child(1){transform:rotate(-2deg) translateX(-2px)}
+.scribble-stack .ss-line:nth-child(2){transform:rotate(-1.4deg) translateX(6px)}
+.about{background:var(--ink2);border-top:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,6vw,4.5rem);align-items:center}
+@media(max-width:820px){.about-grid{grid-template-columns:1fr}}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.about-photos .ph{border-radius:14px;overflow:hidden;aspect-ratio:1;background:var(--ink3)}
+.about-photos .ph:first-child{grid-column:span 2;aspect-ratio:16/10}
+.about-photos img{width:100%;height:100%;object-fit:cover}
+.about p{color:var(--grey);font-size:1.05rem;line-height:1.75;margin-bottom:1rem;max-width:54ch}
+.about .stat{color:var(--white);font-weight:700}
+.about .scribble-note{font-size:1.5rem;margin-bottom:1rem}
+
+/* ── REASSURE band ── */
+.reassure{background:var(--orange);color:#fff;text-align:center}
+.reassure h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.2rem,5.5vw,4.5rem);line-height:1;max-width:18ch;margin:0 auto}
+.reassure .scribble-note{color:var(--ink);font-size:clamp(1.4rem,3vw,2rem);transform:rotate(-2deg);margin-top:1rem}
+.reassure p{max-width:52ch;margin:1.5rem auto 0;font-size:1.1rem;opacity:.95;line-height:1.6}
+
+/* ── CONTACT ── */
+.contact{background:var(--ink)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:start}
+@media(max-width:880px){.contact-grid{grid-template-columns:1fr}}
+.contact .scribble-note{font-size:1.5rem;margin:1rem 0}
+.contact .lead{margin-bottom:2rem}
+.socials{display:flex;flex-direction:column;gap:.7rem}
+.socials a{display:flex;align-items:center;gap:.8rem;font-size:.95rem;font-weight:500;opacity:.75;transition:opacity .2s}
+.socials a:hover{opacity:1;color:var(--orange-l)}
+.socials .si{width:32px;height:32px;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;flex:none}
+.cform{display:flex;flex-direction:column;gap:.9rem;background:var(--ink2);border:1px solid var(--line);border-radius:18px;padding:clamp(1.5rem,4vw,2.2rem)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+@media(max-width:480px){.frow{grid-template-columns:1fr}}
+.ffield{display:flex;flex-direction:column;gap:.4rem}
+.ffield label{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--grey)}
+.ffield input,.ffield textarea{background:rgba(245,240,232,.04);border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem;color:var(--white);font-family:'Inter',sans-serif;font-size:.94rem;outline:none;transition:border-color .2s}
+.ffield input:focus,.ffield textarea:focus{border-color:var(--orange)}
+.ffield textarea{min-height:110px;resize:vertical}
+.form-status{min-height:1.4rem;color:var(--cream);font-size:.9rem;line-height:1.5}
+.form-status.error{color:var(--orange-l)}
+.booking-card{background:var(--ink2);border:1px solid var(--line);border-radius:18px;padding:clamp(1rem,3vw,1.4rem);overflow:hidden}
+.booking-frame{width:100%;min-height:720px;border:0;overflow:hidden;display:block}
+@media(max-width:880px){.booking-frame{min-height:760px}}
+
+/* ── FOOTER ── */
+footer{background:var(--ink);border-top:1px solid var(--line);padding:3.5rem 0 2.5rem}
+.foot-in{display:flex;flex-direction:column;align-items:center;gap:1.8rem;text-align:center}
+.foot-logo-wrap img{height:90px;width:auto}
+.foot-tag{font-family:'Shantell Sans',cursive;font-weight:600;color:var(--grey);font-size:1.1rem}
+.foot-tcg{display:inline-flex;align-items:center;gap:.5rem;opacity:.45;transition:opacity .2s;text-decoration:none;color:var(--grey);font-size:.8rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase}
+.foot-tcg:hover{opacity:.8}
+.foot-tcg-badge{height:22px;width:auto}
+.foot-tcg-badge-dark{height:22px;width:auto;display:none}
+/* light mode: flip footer bg, swap logos */
+[data-theme="light"] footer{background:var(--ink2);border-color:var(--line)}
+[data-theme="light"] .foot-tcg-badge{display:none}
+[data-theme="light"] .foot-tcg-badge-dark{display:block}
+
+/* ── section CTA + trust line ── */
+.sec-cta{display:flex;flex-direction:column;align-items:center;gap:.7rem;margin-top:3rem;text-align:center}
+.sec-cta.left{align-items:flex-start;text-align:left;margin-top:2rem}
+.trust-line{font-size:.82rem;color:var(--grey);display:inline-flex;align-items:center;gap:.5rem;flex-wrap:wrap;justify-content:center}
+.trust-line .tdot{width:5px;height:5px;border-radius:50%;background:#54D27E;flex:none}
+.trust-line b{color:var(--cream);font-weight:600}
+
+/* ── reveal ── */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}*{animation-duration:.001s!important}}
+
+/* ══════════════════════════════════════════════════
+   DSLR CAMERA ON/OFF TOGGLE
+══════════════════════════════════════════════════ */
+.theme-toggle{
+  display:flex;align-items:center;justify-content:center;
+  background:none;border:none;cursor:pointer;padding:0;flex:none;
+  /* prevent it from affecting nav height */
+}
+.tt-body{
+  position:relative;width:52px;height:26px;border-radius:13px;
+  background:#2a2522;border:1.5px solid rgba(245,240,232,.2);
+  display:flex;align-items:center;
+  transition:background .35s,border-color .35s;
+  box-shadow:inset 0 1px 4px rgba(0,0,0,.5),0 0 0 1px rgba(0,0,0,.3);
+  overflow:hidden;
+}
+/* dial knob */
+.tt-dial{
+  position:absolute;left:3px;
+  width:18px;height:18px;border-radius:50%;
+  background:linear-gradient(145deg,#5a5450,#3a3530);
+  border:1px solid rgba(245,240,232,.25);
+  box-shadow:0 1px 4px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.1);
+  transition:transform .35s cubic-bezier(.34,1.4,.5,1);
+  z-index:2;
+  /* camera dial notch mark */
+}
+.tt-dial::after{
+  content:"";position:absolute;top:50%;left:50%;
+  width:2px;height:6px;
+  background:rgba(245,240,232,.5);
+  border-radius:1px;
+  transform:translate(-50%,-50%);
+}
+/* ON / OFF text labels */
+.tt-mark{
+  position:absolute;font-family:"Bebas Neue",sans-serif;
+  font-size:.55rem;letter-spacing:.1em;top:50%;transform:translateY(-50%);
+  transition:opacity .2s;
+  user-select:none;
+}
+.tt-mark.on{right:5px;color:rgba(245,240,232,.3)}
+.tt-mark.off{left:6px;color:rgba(245,240,232,.6)}
+
+/* toggled state dial slides right, strip goes orange-tinted */
+[data-theme="light"] .tt-body{
+  background:#e8e2db;border-color:rgba(26,23,20,.2);
+  box-shadow:inset 0 1px 4px rgba(0,0,0,.15),0 0 0 1px rgba(0,0,0,.1);
+}
+[data-theme="light"] .tt-dial{
+  transform:translateX(26px);
+  background:linear-gradient(145deg,#DC2048,#b81838);
+  border-color:rgba(0,0,0,.15);
+  box-shadow:0 1px 6px rgba(220,32,72,.5),inset 0 1px 0 rgba(255,255,255,.2);
+}
+[data-theme="light"] .tt-mark.on{color:rgba(26,23,20,.5)}
+[data-theme="light"] .tt-mark.off{color:rgba(26,23,20,.2)}
+
+/* ══════════════════════════════════════════════════
+   LIGHT MODE OVERRIDES  [data-theme="light"]
+   Dark mode is default (no attribute)
+══════════════════════════════════════════════════ */
+[data-theme="light"]{
+  --ink:#F5F2ED;
+  --ink2:#ECEAE4;
+  --ink3:#E2DED7;
+  --cream:#2B2620;
+  --cream2:#332E28;
+  --white:#1A1714;
+  --grey:#6B6560;
+  --line:rgba(26,23,20,.1);
+}
+
+/* nav: light frosted glass */
+[data-theme="light"] nav{background:rgba(245,242,237,.92);border-color:rgba(26,23,20,.12);box-shadow:0 8px 32px rgba(0,0,0,.1)}
+[data-theme="light"] nav:hover{background:rgba(245,242,237,.98);box-shadow:0 12px 40px rgba(0,0,0,.15)}
+
+/* logo swapped via .logo-light / .logo-dark rules below */
+
+/* hero gradient lightened */
+[data-theme="light"] .hero-bg::before{
+  background:radial-gradient(ellipse 80% 70% at 60% 40%,rgba(220,32,72,.07),transparent 65%),
+             radial-gradient(ellipse 40% 60% at 20% 60%,rgba(220,32,72,.03),transparent 60%),
+             radial-gradient(circle at 75% 20%,rgba(220,32,72,.05),transparent 40%);
+}
+[data-theme="light"] .hero-bg{background:linear-gradient(135deg,#F2EDE6 0%,#EDE7DE 40%,#F0EBE3 100%)}
+
+/* hero card borders */
+[data-theme="light"] .hc{border-color:rgba(26,23,20,.15)}
+
+/* doodles: white in dark mode (forced above), original color retained in light */
+[data-theme="light"] .hero-doodle{filter:drop-shadow(0 2px 8px rgba(0,0,0,.12))}
+
+/* svc-marquee text */
+[data-theme="light"] .svc-track span{color:var(--white)}
+
+/* bento */
+[data-theme="light"] .bento-card{background:var(--ink2);border-color:rgba(26,23,20,.1)}
+[data-theme="light"] .bento-card:hover{border-color:rgba(220,32,72,.3)}
+[data-theme="light"] .stat-pill{background:rgba(26,23,20,.05);border-color:rgba(26,23,20,.12)}
+[data-theme="light"] .bar{background:linear-gradient(to top,rgba(26,23,20,.12),rgba(26,23,20,.04))}
+[data-theme="light"] .plat-ico{background:rgba(26,23,20,.06);color:var(--white)}
+[data-theme="light"] .plat-ico:hover{background:var(--orange);color:#fff}
+[data-theme="light"] .b-dark{background:#1A1714;border-color:rgba(245,240,232,.06)}
+[data-theme="light"] .clock{border-color:rgba(26,23,20,.15)}
+[data-theme="light"] .clock::before{background:var(--white)}
+[data-theme="light"] .pchip{border-color:rgba(26,23,20,.2);color:var(--white)}
+
+/* process + film KEEP DARK always (per user request) */
+/* no light overrides for .process, .film-frame, .perf-strip, .hole they stay dark */
+/* but variables flip in light mode, so force text colors light for readability */
+[data-theme="light"] .process .proc-head .h2{color:#F5F0E8}
+[data-theme="light"] .process .proc-head .lead{color:#9A8F80}
+[data-theme="light"] .film-frame h3{color:#F5F0E8}
+[data-theme="light"] .film-frame p{color:#9A8F80}
+[data-theme="light"] .film-frame .step-n{color:#DC2048}
+[data-theme="light"] .film-frame .scribble-tag{color:#F0305A}
+[data-theme="light"] .process .sec-cta .trust-line{color:#9A8F80}
+[data-theme="light"] .process .sec-cta .trust-line b{color:#E8DDCA}
+
+/* fix grain texture in light mode to use dark dots */
+[data-theme="light"] .process::before{
+  background-image:url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='1' height='1' fill='rgba(245,240,232,.03)'/%3E%3C/svg%3E");
+}
+
+/* gets/callsheet light bg, dark callsheet strip */
+[data-theme="light"] .gets{background:var(--ink)}
+[data-theme="light"] .callsheet{background:#191612;border-color:rgba(245,240,232,.08)}
+[data-theme="light"] .callsheet .cs-head .scene{color:#F5F0E8}
+[data-theme="light"] .callsheet .take{color:#F0305A}
+[data-theme="light"] .timeline{color:#F5F0E8}
+[data-theme="light"] .timeline::before{background:repeating-linear-gradient(rgba(245,240,232,.14) 0 4px,transparent 4px 8px)}
+[data-theme="light"] .timeline li::before{background:#191612;border-color:#DC2048}
+[data-theme="light"] .timeline li.final::before{background:#DC2048}
+[data-theme="light"] .timeline li{color:#F5F0E8}
+[data-theme="light"] .timeline li .t-label{color:#F5F0E8}
+[data-theme="light"] .timeline li .t-time{color:#9A8F80}
+[data-theme="light"] .timeline li.final .t-label,[data-theme="light"] .timeline li.final .t-time{color:#F0305A}
+[data-theme="light"] .cs-top{background:repeating-linear-gradient(135deg,#100E0C 0 16px,#F5F0E8 16px 32px)}
+
+/* about section */
+[data-theme="light"] .about{background:var(--ink2)}
+
+/* contact */
+[data-theme="light"] .contact{background:var(--ink)}
+[data-theme="light"] .cform{background:var(--ink2);border-color:rgba(26,23,20,.1)}
+[data-theme="light"] .ffield input,[data-theme="light"] .ffield textarea{background:rgba(26,23,20,.04);border-color:rgba(26,23,20,.12);color:var(--white)}
+
+/* footer */
+[data-theme="light"] footer{background:var(--ink);border-color:rgba(26,23,20,.1)}
+
+/* human section */
+[data-theme="light"] .human{background:var(--ink)}
+
+/* reassure band always stays accent red */
+/* logo visibility dark mode shows white, light mode shows black */
+.logo-mark .logo-light,.foot-logo-wrap .logo-light{display:block}
+.logo-mark .logo-dark,.foot-logo-wrap .logo-dark{display:none}
+[data-theme="light"] .logo-mark .logo-light,[data-theme="light"] .foot-logo-wrap .logo-light{display:none!important}
+[data-theme="light"] .logo-mark .logo-dark,[data-theme="light"] .foot-logo-wrap .logo-dark{display:block!important}
+
+/* ── HAMBURGER + FULLSCREEN MOBILE MENU ── */
+.hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;
+  background:none;border:none;cursor:pointer;padding:6px;flex:none;z-index:300}
+.hamburger span{display:block;width:22px;height:2px;background:var(--white);border-radius:2px;
+  transition:transform .35s cubic-bezier(.22,1,.36,1),opacity .25s,width .25s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0;width:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* fullscreen overlay menu */
+.fs-menu{position:fixed;inset:0;z-index:250;
+  background:rgba(14,12,10,.97);backdrop-filter:blur(20px);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.4rem;
+  opacity:0;pointer-events:none;transition:opacity .35s,background .35s}
+.fs-menu.open{opacity:1;pointer-events:all}
+.fs-menu a{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.4rem,8vw,4rem);letter-spacing:.06em;
+  color:#F5F0E8;text-decoration:none;opacity:.5;transition:opacity .2s,color .2s;
+  transform:translateY(12px);transition:transform .4s cubic-bezier(.22,1,.36,1),opacity .3s,color .2s}
+.fs-menu.open a{opacity:.7;transform:translateY(0)}
+.fs-menu.open a:nth-child(1){transition-delay:.05s}
+.fs-menu.open a:nth-child(2){transition-delay:.1s}
+.fs-menu.open a:nth-child(3){transition-delay:.15s}
+.fs-menu.open a:nth-child(4){transition-delay:.2s}
+.fs-menu a:hover{opacity:1;color:var(--orange)}
+.fs-menu .fs-cta{font-size:clamp(1rem,4vw,1.4rem);font-family:'Inter',sans-serif;
+  font-weight:700;background:var(--orange);color:#fff!important;opacity:1!important;
+  padding:1rem 2.5rem;border-radius:99px;letter-spacing:.06em;transform:translateY(12px)}
+.fs-menu.open .fs-cta{transform:translateY(0);transition-delay:.22s}
+.fs-menu .fs-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;
+  cursor:pointer;color:#F5F0E8;font-size:1.6rem;opacity:.5;line-height:1;padding:.5rem}
+.fs-menu .fs-close:hover{opacity:1}
+/* light mode: flip the fullscreen menu to a white background with dark text */
+[data-theme="light"] .fs-menu{background:rgba(245,242,237,.98)}
+[data-theme="light"] .fs-menu a{color:#1A1714}
+[data-theme="light"] .fs-menu .fs-close{color:#1A1714}
+
+@media(max-width:1080px){
+  .hamburger{display:flex}
+  .nav-links{display:none}
+}
+@media(min-width:1081px){
+  .hamburger{display:none}
+  .fs-menu{display:none!important}
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-in">
+    <a class="logo-mark" href="#top" aria-label="Doodle Noodle Studio home">
+      <img class="logo-light" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264185/Doodle_Noodle_-_White_kxecg9.png" alt="Doodle Noodle Studio">
+      <img class="logo-dark" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264191/Doodle_Noodle_-_Black_cewox5.png" alt="Doodle Noodle Studio">
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#work">Our Work</a>
+      <a href="#value">How We Help</a>
+      <a href="#process">Process</a>
+      <a href="#about">Team</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle light mode">
+        <span class="tt-body">
+          <span class="tt-dial"></span>
+          <span class="tt-mark on">ON</span>
+          <span class="tt-mark off">OFF</span>
+        </span>
+      </button>
+      <a class="nav-cta" href="#contact">Book a free call
+        <span class="cta-dot"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <!-- scribble doodles replacing SVG scribbles -->
+  <img class="hero-doodle hd1" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781272371/Artboard_2_copy_5_ht7xdb.png" alt="" aria-hidden="true">
+  <img class="hero-doodle hd2" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781272372/Artboard_2_copy_4_xtypnk.png" alt="" aria-hidden="true">
+  <img class="hero-doodle hd3" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781272371/Artboard_2_copy_2_zepxia.png" alt="" aria-hidden="true">
+  <img class="hero-doodle hd4" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781272370/Artboard_2_copy_3_enbdc1.png" alt="" aria-hidden="true">
+
+  <div class="wrap hero-top">
+    <h1>Turn Your Mission Into <span class="hl">Momentum</span></h1>
+    <p class="hero-sub">Natural interview-style videos that show the real people and real impact behind your mission. No corporate jargon. No stiff talking-head PSAs. No cheesy ads. <span class="scribble" style="color:var(--cream)">Just real conversations.</span></p>
+    <div class="hero-cta">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="btn btn-ghost" href="#work">See our work</a>
+    </div>
+  </div>
+
+  <!-- hero video module: fanned 3 cards -->
+  <div class="wrap">
+    <div class="hero-cards">
+      <div class="hc left">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/Video%208.mp4" muted loop playsinline preload="metadata"></video>
+        <button class="hc-mute" aria-label="Toggle sound"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6v4h2.5L9 13V3L5.5 6H3z" fill="#fff"/><path d="M11 6c.8.8.8 3.2 0 4" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg></button>
+        <span class="hc-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </div>
+      <div class="hc center">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/Video%202%20daniel%20.mp4" muted loop playsinline preload="metadata"></video>
+        <button class="hc-mute" aria-label="Toggle sound"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6v4h2.5L9 13V3L5.5 6H3z" fill="#fff"/><path d="M11 6c.8.8.8 3.2 0 4" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg></button>
+        <span class="hc-social ig" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1782802479/Instagram_logo_2022_oevaft.svg" alt="Instagram"></span>
+        <span class="hc-social tt" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1782802518/Tiktok_icon_cv3eel.svg" alt="TikTok"></span>
+        <span class="hc-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </div>
+      <div class="hc right">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/%D7%90%D7%99%D7%A0%D7%94%20%D7%A1%D7%A8%D7%98%D7%95%D7%9F%202.mp4" muted loop playsinline preload="metadata"></video>
+        <button class="hc-mute" aria-label="Toggle sound"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6v4h2.5L9 13V3L5.5 6H3z" fill="#fff"/><path d="M11 6c.8.8.8 3.2 0 4" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg></button>
+        <span class="hc-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HUMAN / PROBLEM -->
+<section class="human sec-pad">
+  <div class="wrap human-grid">
+    <div class="rv">
+      <span class="kicker">The problem</span>
+      <h2 class="h2">Your mission is powerful. Your feed doesn't show it.</h2>
+      <span class="scribble-note">…so they scroll past and give somewhere else</span>
+      <p style="margin-top:1.4rem">Before anyone donates, volunteers, or shares your cause, they look you up. They check your Instagram, your TikTok, your website. And what they find decides whether they trust you enough to get involved and right now, a quiet or generic profile is costing you the supporters who were already curious.</p>
+      <p>They don't know your story. They don't know what your work actually looks like on the ground. They can't tell why they should support you over the next cause competing for the same attention.</p>
+      <p class="big">That's where Doodle Noodle comes in.</p>
+      <div class="no-row">
+        <span class="chip">no fake scripts</span>
+        <span class="chip">no awkward acting</span>
+        <span class="chip">no cheesy ads</span>
+      </div>
+      <p>We turn one filming day into a feed full of warm, credible, scroll-stopping videos so the person scrolling past at 11pm feels the impact of your work before they ever read a grant report.</p>
+    </div>
+    <div class="human-photos rv">
+      <div class="ph"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781314833/DSC02169_jcf6cp.jpg" alt="On set with Doodle Noodle Studio" loading="lazy"></div>
+      <div class="ph"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781314819/IMG_20230811_175711_ex0hsm.jpg" alt="Behind the scenes" loading="lazy"></div>
+      <div class="ph"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781314628/IMG_2693_qklkuo.jpg" alt="Interview filming" loading="lazy"></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-cta rv">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="trust-line"><span class="tdot"></span><b>A feed that builds trust</b> while you're busy doing the work</span>
+    </div>
+  </div>
+</section>
+
+<!-- HOW DOODLE NOODLE ADDS VALUE -->
+<section class="value sec-pad" id="value">
+  <div class="wrap">
+    <div class="rv" style="text-align:center;max-width:60ch;margin:0 auto">
+      <span class="kicker" style="justify-content:center">How we help</span>
+      <h2 class="h2">We don't just film you. We build trust in your mission.</h2>
+      <p class="lead" style="margin:1rem auto 0">You stay focused on the work. We handle the part that turns a quiet profile into new donors, volunteers, and supporters.</p>
+    </div>
+    <div class="value-grid">
+      <div class="value-card rv">
+        <span class="vc-num">01</span>
+        <h3>We give you a reason to post</h3>
+        <p>No more staring at a blank caption box. We map out the stories your donors and volunteers actually want to see, so every video has a clear point and a clear person it's for.</p>
+        <span class="vc-tag">a real content plan ✦</span>
+      </div>
+      <div class="value-card rv">
+        <span class="vc-num">02</span>
+        <h3>We make your cause look worth backing</h3>
+        <p>Clean filming, warm lighting, natural direction. Your feed stops looking like a fundraising ask and starts looking like a mission worth believing in.</p>
+        <span class="vc-tag">credibility, on camera</span>
+      </div>
+      <div class="value-card rv">
+        <span class="vc-num">03</span>
+        <h3>We keep you consistent without the effort</h3>
+        <p>One filming day fills your calendar with weeks of ready-to-post videos. You show up consistently exactly what keeps donors engaged and volunteers coming back.</p>
+        <span class="vc-tag">show up every week</span>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-cta rv">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="trust-line"><span class="tdot"></span><b>Strategy + filming + editing</b> done for you, end to end</span>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS / IMAGINE BENTO -->
+<section class="benefits sec-pad">
+  <div class="wrap">
+    <div class="ben-head rv">
+      <span class="kicker" style="justify-content:center">One filming day</span>
+      <h2 class="h2">One filming day = <span style="color:var(--orange-l)">months</span> of stories that move people to act</h2>
+      <p class="lead">Videos that answer the questions donors and volunteers are quietly Googling before they give. Videos that show your impact and your people. <span class="scribble" style="color:var(--cream)">A profile people land on and think "okay, this cause is real."</span></p>
+    </div>
+
+    <div class="bento">
+      <!-- LEFT COLUMN: stats card -->
+      <div class="bento-card b-stats rv" style="display:flex;flex-direction:column">
+        <h3 class="bento-h">Content built to grow your donor base and your reach</h3>
+        <div class="stat-pills">
+          <span class="stat-pill"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H5M10 3V8" stroke="#F0305A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Avg watch time 32%</span>
+          <span class="stat-pill"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M3 10L10 3M10 3H5M10 3V8" stroke="#F0305A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Engagement rate 45%</span>
+        </div>
+        <div class="bar-chart">
+          <span class="bar-badge">10–15 videos</span>
+          <div class="bar" style="height:30%"></div>
+          <div class="bar" style="height:42%"></div>
+          <div class="bar" style="height:55%"></div>
+          <div class="bar" style="height:50%"></div>
+          <div class="bar" style="height:68%"></div>
+          <div class="bar" style="height:80%"></div>
+          <div class="bar" style="height:100%"></div>
+        </div>
+      </div>
+
+      <!-- MIDDLE-TOP: wide card with text only -->
+      <div class="bento-card b-image rv" style="background:linear-gradient(135deg,var(--ink3) 0%,var(--ink2) 100%);display:flex;align-items:flex-end;padding:1.8rem">
+        <div style="position:relative;z-index:2">
+          <div class="bi-cap" style="position:static;font-size:clamp(1.6rem,3vw,2.6rem)">Professional, natural, human edits</div>
+        </div>
+      </div>
+
+      <!-- LEFT COLUMN: revenue card -->
+      <div class="bento-card b-rev rv">
+        <span class="rev-ico"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="6" width="16" height="10" rx="2" stroke="#F5F0E8" stroke-width="1.5"/><circle cx="11" cy="11" r="2.5" stroke="#F5F0E8" stroke-width="1.5"/></svg></span>
+        <span class="rev-num">1,000+</span>
+        <span class="rev-lbl">Clients served abroad</span>
+      </div>
+
+      <!-- MIDDLE-BOTTOM: platforms card (spans 2 rows) -->
+      <div class="bento-card b-platforms rv">
+        <div class="plat-cloud">
+          <span class="plat-ico" title="LinkedIn"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M4 6.5H1.5V15H4V6.5zM2.75 5.3a1.45 1.45 0 100-2.9 1.45 1.45 0 000 2.9zM16.5 15h-2.5v-4.2c0-1-.02-2.3-1.4-2.3s-1.6 1.1-1.6 2.2V15H8.5V6.5H11v1.16h.03c.35-.66 1.2-1.36 2.46-1.36 2.63 0 3.12 1.73 3.12 3.98V15z"/></svg></span>
+          <span class="plat-ico" title="YouTube"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M16.5 5.6a1.9 1.9 0 00-1.35-1.35C13.95 4 9 4 9 4s-4.95 0-6.15.25A1.9 1.9 0 001.5 5.6 19.8 19.8 0 001.25 9c0 1.15.08 2.3.25 3.4a1.9 1.9 0 001.35 1.35C4.05 14 9 14 9 14s4.95 0 6.15-.25a1.9 1.9 0 001.35-1.35c.17-1.1.25-2.25.25-3.4s-.08-2.3-.25-3.4zM7.4 11.2V6.8L11.2 9l-3.8 2.2z"/></svg></span>
+          <span class="plat-ico" title="Vimeo"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M16 5.6c-.07 1.55-1.15 3.68-3.24 6.37C10.6 14.78 8.8 16.2 7.34 16.2c-.9 0-1.67-.84-2.3-2.5-.42-1.55-.84-3.1-1.26-4.65-.47-1.66-.97-2.5-1.5-2.5-.12 0-.52.24-1.2.72L.32 6.3c.85-.75 1.7-1.5 2.53-2.25 1.15-1 2-1.52 2.6-1.58 1.4-.13 2.26.83 2.58 2.88.35 2.2.6 3.58.73 4.12.4 1.8.83 2.7 1.3 2.7.37 0 .92-.58 1.66-1.74.73-1.16 1.12-2.04 1.17-2.65.1-.92-.27-1.38-1.1-1.38-.4 0-.8.1-1.22.27.8-2.63 2.34-3.9 4.6-3.84 1.67.05 2.46 1.14 2.36 3.26z"/></svg></span>
+          <span class="plat-ico" title="Instagram"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="3" y="3" width="12" height="12" rx="3.5" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="12.8" cy="5.2" r="0.9" fill="currentColor"/></svg></span>
+          <span class="plat-ico" title="Facebook"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M10.5 16v-6h2l.4-2.4h-2.4V6.1c0-.7.2-1.18 1.2-1.18h1.3V2.8c-.23-.03-1-.1-1.9-.1-1.9 0-3.2 1.16-3.2 3.28V7.6H5.6V10h2v6h2.9z"/></svg></span>
+          <span class="plat-ico" title="TikTok"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M12 2.5c.3 2 1.8 3.2 3.6 3.3v2.5c-1.4 0-2.7-.45-3.6-1.2v5.6c0 2.5-2 4.5-4.5 4.5S3 15.2 3 12.7s2-4.5 4.5-4.5c.27 0 .53.02.78.07v2.6c-.25-.1-.5-.15-.78-.15-1.13 0-2 .9-2 2s.87 2 2 2 2-.9 2-2V2.5H12z"/></svg></span>
+          <span class="plat-ico" title="Snapchat"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M9 2.5c1.9 0 3.2 1.5 3.2 3.4 0 .6 0 1.1.1 1.5.3.2.7.2 1 .1.5-.1.9.5.5.9-.3.3-1 .5-1.2.9-.2.6 1.3 2.4 2.6 2.7.3.1.3.5 0 .7-.5.3-1.4.3-1.7.7-.1.2 0 .6-.3.7-.4.1-1-.3-1.7-.1-.6.2-1.1 1-2.6 1s-2-.8-2.6-1c-.7-.2-1.3.2-1.7.1-.3-.1-.2-.5-.3-.7-.3-.4-1.2-.4-1.7-.7-.3-.2-.3-.6 0-.7 1.3-.3 2.8-2.1 2.6-2.7-.2-.4-.9-.6-1.2-.9-.4-.4 0-1 .5-.9.3.1.7.1 1-.1.1-.4.1-.9.1-1.5C5.8 4 7.1 2.5 9 2.5z"/></svg></span>
+          <span class="plat-ico" title="YouTube Shorts"><svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor"><path d="M11.5 3.2L5.8 6.3c-1.5.8-1.9 2.6-1 4 .4.6 1 1 1.7 1.2l-.9.5c-1.5.8-1.9 2.6-1 4s2.7 1.7 4.1.9l5.7-3.1c1.5-.8 1.9-2.6 1-4-.4-.6-1-1-1.7-1.2l.9-.5c1.5-.8 1.9-2.6 1-4s-2.6-1.9-4.1-1.1zM7.5 11V7l3.5 2-3.5 2z"/></svg></span>
+          <span class="plat-ico" title="X"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M9.5 7l4-5h-1.2L9 5.9 6.3 2H3l4.2 6L3 14h1.2L8 9.7l3 4.3h3.3L9.5 7zm-1.3 1.5l-.5-.6L4.5 3h1.4l3 4.3.5.6 3.6 5.1h-1.4L8.2 8.5z"/></svg></span>
+        </div>
+        <h3>Ready for every platform you're judged on</h3>
+        <p>Cut and formatted for the feeds where donors and volunteers look you up Instagram, TikTok, Google, and more.</p>
+      </div>
+      <!-- RIGHT col: direction card -->
+      <div class="bento-card b-quick rv">
+        <h3>Natural direction on camera</h3>
+        <p>You don't memorize anything we guide you so every answer feels natural.</p>
+        <div class="clock" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-cta rv">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="trust-line"><span class="tdot"></span><b>One filming day</b> → a posting calendar you never have to scramble for</span>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="work sec-pad" id="work">
+  <div class="wrap">
+    <div class="work-head">
+      <div class="rv">
+        <span class="kicker">Our work</span>
+        <h2 class="h2">Real missions.<br>Real conversations.</h2>
+      </div>
+    </div>
+        <div class="work-grid">
+      <article class="proj rv" data-src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/reel%204%20wayne%20vers%202.mp4">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/reel%204%20wayne%20vers%202.mp4" muted loop playsinline preload="metadata"></video>
+        <span class="proj-tag">Donor FAQ</span>
+        <span class="proj-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </article>
+      <article class="proj rv" data-src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/Video%202%20daniel%20.mp4">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/Video%202%20daniel%20.mp4" muted loop playsinline preload="metadata"></video>
+        <span class="proj-tag">Founder story</span>
+        <span class="proj-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </article>
+      <article class="proj rv" data-src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/Video%208.mp4">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/Video%208.mp4" muted loop playsinline preload="metadata"></video>
+        <span class="proj-tag">Volunteer Q&amp;A</span>
+        <span class="proj-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </article>
+      <article class="proj rv" data-src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/%D7%90%D7%99%D7%A0%D7%94%20%D7%A1%D7%A8%D7%98%D7%95%D7%9F%202.mp4">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/%D7%90%D7%99%D7%A0%D7%94%20%D7%A1%D7%A8%D7%98%D7%95%D7%9F%202.mp4" muted loop playsinline preload="metadata"></video>
+        <span class="proj-tag">Meet the team</span>
+        <span class="proj-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </article>
+      <article class="proj rv" data-src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/%D7%A7%D7%9E%D7%A4%D7%99%D7%99%D7%9F%20-%D7%90%D7%A8%D7%99%D7%90%D7%9C%D7%94%20%D7%A1%D7%A8%D7%98%D7%95%D7%9F%209%20%D7%92%D7%A8%D7%A1%D7%94%20%D7%92%20%281%29.mp4">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/%D7%A7%D7%9E%D7%A4%D7%99%D7%99%D7%9F%20-%D7%90%D7%A8%D7%99%D7%90%D7%9C%D7%94%20%D7%A1%D7%A8%D7%98%D7%95%D7%9F%209%20%D7%92%D7%A8%D7%A1%D7%94%20%D7%92%20%281%29.mp4" muted loop playsinline preload="metadata"></video>
+        <span class="proj-tag">Explainer</span>
+        <span class="proj-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </article>
+      <article class="proj rv" data-src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/reel%209%20wayne.mp4">
+        <video src="https://qtsfr6gyxrjtnqme.public.blob.vercel-storage.com/reel%209%20wayne.mp4" muted loop playsinline preload="metadata"></video>
+        <span class="proj-tag">Short-form</span>
+        <span class="proj-play-hint" aria-hidden="true"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264183/Doodle_Noodle_-_Icon_kpxkim.png" alt=""></span>
+      </article>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-cta rv">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="trust-line"><span class="tdot"></span>Real missions, <b>real impact</b> see yours here next</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process sec-pad" id="process">
+  <div class="wrap">
+    <div class="proc-head rv">
+      <span class="kicker" style="justify-content:center">How it works</span>
+      <h2 class="h2">Four steps. Zero stress.</h2>
+      <p class="lead" style="margin-top:1rem">You don't need to memorize anything. We guide you through the interview so your answers sound natural, clear, and confident.</p>
+    </div>
+  </div>
+
+  <div class="film-rail">
+    <!-- top perforations continuous film holes (desktop) -->
+    <div class="perf-strip perf-desktop" aria-hidden="true">
+      <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+    </div>
+
+    <div class="frames-grid">
+      <div class="perf-strip perf-mobile" aria-hidden="true">
+        <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+      </div>
+      <div class="film-frame rv">
+        <div class="fn" aria-hidden="true"><span class="fc">01</span>A001 · DISC CALL · +5</div>
+        <div class="frame-inner">
+          <span class="step-n">01</span>
+          <h3>Discovery Call</h3>
+          <p>We learn about your mission, your programs, your community, and what makes your story worth telling.</p>
+          <span class="scribble-tag">just a chat free!</span>
+        </div>
+        <div aria-hidden="true"></div>
+      </div>
+
+      <div class="perf-strip perf-mobile" aria-hidden="true">
+        <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+      </div>
+      <div class="film-frame rv">
+        <div class="fn" aria-hidden="true"><span class="fc">02</span>A002 · STRATEGY · +5</div>
+        <div class="frame-inner">
+          <span class="step-n">02</span>
+          <h3>Content Strategy</h3>
+          <p>We build the questions and topics based on what your future donors and volunteers actually want to know.</p>
+          <span class="scribble-tag">their real questions</span>
+        </div>
+        <div aria-hidden="true"></div>
+      </div>
+
+      <div class="perf-strip perf-mobile" aria-hidden="true">
+        <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+      </div>
+      <div class="film-frame rv">
+        <div class="fn" aria-hidden="true"><span class="fc">03</span>A003 · FILM DAY · +5</div>
+        <div class="frame-inner">
+          <span class="step-n">03</span>
+          <h3>Filming Day</h3>
+          <p>We come with the camera, lights, sound, and direction. We guide you through the whole interview.</p>
+          <span class="scribble-tag">no script, no acting</span>
+        </div>
+        <div aria-hidden="true"></div>
+      </div>
+
+      <div class="perf-strip perf-mobile" aria-hidden="true">
+        <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+      </div>
+      <div class="film-frame rv">
+        <div class="fn" aria-hidden="true"><span class="fc">04</span>A004 · EDITING · +5</div>
+        <div class="frame-inner">
+          <span class="step-n">04</span>
+          <h3>Editing</h3>
+          <p>We turn the footage into short, scroll-stopping videos formatted for each platform ready to post and build trust on your feed.</p>
+          <span class="scribble-tag">straight to your feed</span>
+        </div>
+        <div aria-hidden="true"></div>
+      </div>
+
+      <div class="perf-strip perf-mobile perf-mobile-last" aria-hidden="true">
+        <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+      </div>
+    </div>
+
+    <!-- bottom perforations continuous film holes (desktop) -->
+    <div class="perf-strip perf-desktop" aria-hidden="true">
+      <div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div><div class="hole"></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-cta rv">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="trust-line"><span class="tdot"></span><b>Free</b> discovery call no scripts, no pressure</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section class="gets sec-pad">
+  <div class="wrap gets-grid">
+    <div class="rv">
+      <span class="kicker">What you get</span>
+      <h2 class="h2">One day of filming, a story that moves people for months</h2>
+      <ul class="gets-list">
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>10–15 short videos for your feed</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Captions &amp; hooks written for you</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Professional filming</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Clean sound and lighting</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Vertical edits for Reels, Shorts &amp; TikTok</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>B-roll footage</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Natural direction on camera</li>
+        <li><span class="tick"><svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M2 6l2.5 2.5L9 3" stroke="#F0305A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>A content plan + posting order</li>
+      </ul>
+    </div>
+    <div class="callsheet rv">
+      <div class="cs-top" aria-hidden="true"></div>
+      <span class="cs-scribble">a typical day ✦</span>
+      <div class="cs-body">
+        <div class="cs-head">
+          <span class="scene">Scene 01 · Filming day</span>
+          <span class="take">take 1 action!</span>
+        </div>
+        <ul class="timeline">
+          <li><span class="t-label">Coffee &amp; warm-up</span><span class="t-time">09:00</span></li>
+          <li><span class="t-label">Interview · your story</span><span class="t-time">09:45</span></li>
+          <li><span class="t-label">Interview · community questions</span><span class="t-time">11:30</span></li>
+          <li><span class="t-label">B-roll · your programs in action</span><span class="t-time">13:30</span></li>
+          <li><span class="t-label">That's a wrap</span><span class="t-time">15:00</span></li>
+          <li class="final"><span class="t-label">You receive</span><span class="t-time">10–15 videos ✦</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-cta rv">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="trust-line"><span class="tdot"></span><b>10–15 ready-to-post videos</b> from a single filming day</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about sec-pad" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photos rv">
+      <div class="ph"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781314681/IMG_0970_ojaxxe.jpg" alt="Artium and Stella" loading="lazy"></div>
+      <div class="ph"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781314833/DSC02169_jcf6cp.jpg" alt="On set" loading="lazy"></div>
+      <div class="ph"><img src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781314628/IMG_2693_qklkuo.jpg" alt="Behind the scenes" loading="lazy"></div>
+    </div>
+    <div class="rv">
+      <span class="kicker">We're Artium &amp; Stella</span>
+      <div class="scribble-stack">
+        <span class="ss-line">a husband-and-wife</span>
+        <span class="ss-line">video team ✦</span>
+      </div>
+      <p style="margin-top:1rem">A husband-and-wife team behind DoodleNoodle Studios. <span class="stat">We've worked with over 1,000 clients abroad</span> and now we're building our business here in Toronto.</p>
+      <p>Our style is simple: we don't just make videos look good. We help nonprofits and community organizations build a presence online so the people discovering their mission see something real, credible, and worth supporting.</p>
+      <p>You don't need to be "good on camera." That's our job. We ask the right questions. We guide the conversation. We help you say things in a way that feels natural. Most owners already have the right message inside them <span class="scribble" style="color:var(--orange-l)">they just need someone to pull it out.</span></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="sec-cta rv">
+      <a class="btn btn-pri" href="#contact">Book a free discovery call
+        <span class="btn-arrow"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M6.5 3.5L9 6l-2.5 2.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <span class="trust-line"><span class="tdot"></span>Trusted by <b>1,000+ clients</b> now filming in Toronto &amp; the GTA</span>
+    </div>
+  </div>
+</section>
+
+<!-- REASSURE -->
+<section class="reassure sec-pad">
+  <div class="wrap rv">
+    <h2>You don't need to be "good on camera."</h2>
+    <div class="scribble-note">that's literally our job →</div>
+    <p>We ask the right questions, guide the conversation, and help you say things in a way that feels natural. The right message is already inside you we just pull it out.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact sec-pad" id="contact">
+  <div class="wrap contact-grid">
+    <div class="rv">
+      <span class="kicker">Let's talk</span>
+      <h2 class="h2">Ready to turn one filming day into a feed that wins supporters?</h2>
+      <div class="scribble-note">no pitch just a conversation ✦</div>
+      <p class="lead">Let's build a social presence that helps people understand your mission, trust your work, and want to be part of it before they even reach out. Book a free discovery call with DoodleNoodle Studios.</p>
+      <div class="socials">
+        <a href="mailto:stella@doodlenoodleca.com"><span class="si"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><rect x="1.5" y="3" width="12" height="9" rx="1.5" stroke="#F5F0E8" stroke-width="1.3"/><path d="M1.5 4.5L7.5 8.5l6-4" stroke="#F5F0E8" stroke-width="1.3" stroke-linecap="round"/></svg></span>stella@doodlenoodleca.com</a>
+      </div>
+    </div>
+    <div class="booking-card rv" aria-label="Book a free discovery call">
+      <iframe class="booking-frame" src="https://api.leadconnectorhq.com/widget/booking/R1XIMTwlssFPloeb9enF" scrolling="no" id="R1XIMTwlssFPloeb9enF_1782722165750" title="Book a free discovery call"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <div class="foot-logo-wrap">
+      <img class="logo-light" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264185/Doodle_Noodle_-_White_kxecg9.png" alt="Doodle Noodle Studio">
+      <img class="logo-dark" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1781264191/Doodle_Noodle_-_Black_cewox5.png" alt="Doodle Noodle Studio">
+    </div>
+    <span class="foot-tag">Stories that help brands grow ✦</span>
+    <a class="foot-tcg" href="https://talkerstein.com/" target="_blank" rel="noopener" aria-label="TCG">
+      <img class="foot-tcg-badge" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1779888916/TCG_-_Logo_-_XS_-_Horizontal_i8ndvp.png" alt="TCG">
+      <img class="foot-tcg-badge-dark" src="https://res.cloudinary.com/dr8iorhci/image/upload/v1778597340/TCG_-_Logo_-_XS_-_Horizontal_a6mqzy.svg" alt="TCG">
+    </a>
+  </div>
+</footer>
+
+<!-- FULLSCREEN MOBILE MENU -->
+<div class="fs-menu" id="fsMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <button class="fs-close" id="fsClose" aria-label="Close menu">✕</button>
+  <a href="#work"    onclick="closeFsMenu()">Our Work</a>
+  <a href="#value"   onclick="closeFsMenu()">How We Help</a>
+  <a href="#process" onclick="closeFsMenu()">Process</a>
+  <a href="#about"   onclick="closeFsMenu()">Team</a>
+  <a href="#contact" class="fs-cta" onclick="closeFsMenu()">Book a free call</a>
+  <div style="margin-top:.5rem">
+    <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle light/dark mode">
+      <span class="tt-body">
+        <span class="tt-dial"></span>
+        <span class="tt-mark on">ON</span>
+        <span class="tt-mark off">OFF</span>
+      </span>
+    </button>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Video viewer">
+  <div class="lb-inner" id="lbInner">
+    <video id="lbVideo" playsinline preload="metadata"></video>
+    <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+    <button class="lb-sound" id="lbSound" aria-label="Toggle sound">
+      <svg id="lbSoundIcon" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6v4h2.5L9 13V3L5.5 6H3z" fill="#fff"/><path d="M11 6c.8.8.8 3.2 0 4" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg>
+    </button>
+    <span class="lb-counter" id="lbCounter"></span>
+  </div>
+  <button class="lb-prev" id="lbPrev" aria-label="Previous video">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8l5 5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="lb-next" id="lbNext" aria-label="Next video">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</div>
+
+<script>
+// ── LIGHTBOX ──────────────────────────────────────────────────────────────
+const lb        = document.getElementById('lb');
+const lbVideo   = document.getElementById('lbVideo');
+const lbClose   = document.getElementById('lbClose');
+const lbSound   = document.getElementById('lbSound');
+const lbPrev    = document.getElementById('lbPrev');
+const lbNext    = document.getElementById('lbNext');
+const lbCounter = document.getElementById('lbCounter');
+
+let allSrcs = [];
+let currentIdx = 0;
+let isMuted = false;
+
+function openLb(idx) {
+  currentIdx = ((idx % allSrcs.length) + allSrcs.length) % allSrcs.length;
+  lbVideo.src = allSrcs[currentIdx];
+  lbVideo.muted = isMuted;
+  lbVideo.load();
+  lbVideo.play().catch(() => { lbVideo.muted = true; isMuted = true; updateSoundIcon(); lbVideo.play(); });
+  lbCounter.textContent = (currentIdx + 1) + ' / ' + allSrcs.length;
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLb() {
+  lb.classList.remove('open');
+  lbVideo.pause();
+  lbVideo.removeAttribute('src');
+  lbVideo.load();
+  document.body.style.overflow = '';
+}
+
+function navLb(dir) {
+  openLb(currentIdx + dir);
+}
+
+function updateSoundIcon() {
+  lbSound.innerHTML = isMuted
+    ? '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6v4h2.5L9 13V3L5.5 6H3z" fill="#fff"/><line x1="11" y1="6" x2="15" y2="10" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/><line x1="15" y1="6" x2="11" y2="10" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg>'
+    : '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6v4h2.5L9 13V3L5.5 6H3z" fill="#fff"/><path d="M11 6c.8.8.8 3.2 0 4" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/></svg>';
+}
+
+lbClose.addEventListener('click', closeLb);
+lb.addEventListener('click', (e) => { if (e.target === lb) closeLb(); });
+lbPrev.addEventListener('click', () => navLb(-1));
+lbNext.addEventListener('click', () => navLb(1));
+lbSound.addEventListener('click', () => {
+  isMuted = !isMuted;
+  lbVideo.muted = isMuted;
+  updateSoundIcon();
+});
+document.addEventListener('keydown', (e) => {
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape')      closeLb();
+  if (e.key === 'ArrowRight')  navLb(1);
+  if (e.key === 'ArrowLeft')   navLb(-1);
+});
+
+// ── Build the master video list from DOM (raw attribute, not resolved .src) ─
+function buildSrcs() {
+  const heroVids = [...document.querySelectorAll('.hc video')]
+    .map(v => v.getAttribute('src')).filter(Boolean);
+  const gridVids = [...document.querySelectorAll('.proj[data-src]')]
+    .map(c => c.dataset.src);
+  return heroVids.concat(gridVids);
+}
+
+// ── HERO CARDS — click to open lightbox ─────────────────────────────────────
+document.querySelectorAll('.hc').forEach((card, i) => {
+  card.style.cursor = 'pointer';
+  card.addEventListener('click', (e) => {
+    if (e.target.closest('.hc-mute')) return;
+    allSrcs = buildSrcs();
+    openLb(i);
+  });
+});
+
+// ── GRID CARDS — click to open lightbox ─────────────────────────────────────
+document.querySelectorAll('.proj[data-src]').forEach((card, i) => {
+  card.addEventListener('click', (e) => {
+    if (e.target.closest('.proj-mute')) return;
+    allSrcs = buildSrcs();
+    const heroCount = document.querySelectorAll('.hc video').length;
+    openLb(heroCount + i);
+  });
+});
+
+// ── MUTE BUTTONS (grid preview only — stops propagation so no lightbox) ──
+function bindMute(btn) {
+  const card = btn.closest('.proj') || btn.closest('.hc');
+  const v = card ? card.querySelector('video') : null;
+  if (!v) return;
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    v.muted = !v.muted;
+    if (!v.muted) v.play().catch(() => {});
+  });
+}
+document.querySelectorAll('.hc-mute').forEach(bindMute);
+
+// ── HAMBURGER MENU ─────────────────────────────────────────────────────────
+const hamburger = document.getElementById('hamburger');
+const fsMenu    = document.getElementById('fsMenu');
+const fsClose   = document.getElementById('fsClose');
+
+function openFsMenu() {
+  fsMenu.classList.add('open');
+  hamburger.classList.add('open');
+  hamburger.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
+function closeFsMenu() {
+  fsMenu.classList.remove('open');
+  hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+hamburger?.addEventListener('click', () => {
+  fsMenu.classList.contains('open') ? closeFsMenu() : openFsMenu();
+});
+fsClose?.addEventListener('click', closeFsMenu);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && fsMenu.classList.contains('open')) closeFsMenu();
+});
+
+
+(function(){
+  const nav  = document.querySelector('nav');
+  const work = document.getElementById('work');
+  if (!nav || !work) return;
+
+  function isMobileGrid() {
+    return window.matchMedia('(max-width:820px)').matches;
+  }
+
+  const workObs = new IntersectionObserver(entries => {
+    if (!isMobileGrid()) return;
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        nav.style.transition = 'opacity .35s, transform .35s';
+        nav.style.opacity    = '0';
+        nav.style.transform  = 'translateX(-50%) scale(.96) translateY(-12px)';
+        nav.style.pointerEvents = 'none';
+      } else {
+        nav.style.opacity    = '1';
+        nav.style.transform  = 'translateX(-50%) scale(.96)';
+        nav.style.pointerEvents = '';
+      }
+    });
+  }, { threshold: 0.15 });
+
+  workObs.observe(work);
+
+  // reset on desktop resize
+  window.addEventListener('resize', () => {
+    if (!isMobileGrid()) {
+      nav.style.opacity = '1';
+      nav.style.transform = 'translateX(-50%) scale(.96)';
+      nav.style.pointerEvents = '';
+    }
+  });
+})();
+
+const io = new IntersectionObserver(es => {
+  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: .12 });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+// ── AUTOPLAY VIDEOS IN VIEW ────────────────────────────────────────────────
+const vObs = new IntersectionObserver(es => {
+  es.forEach(e => {
+    const v = e.target;
+    if (e.isIntersecting) v.play().catch(() => {});
+    else v.pause();
+  });
+}, { threshold: .25 });
+document.querySelectorAll('video').forEach(v => vObs.observe(v));
+
+// ── DSLR THEME TOGGLE ─────────────────────────────────────────────────────
+const toggle = document.getElementById('themeToggle');
+const toggleMobile = document.getElementById('themeToggleMobile');
+const root   = document.documentElement;
+if (localStorage.getItem('theme') === 'light') root.setAttribute('data-theme', 'light');
+
+function applyTheme(isLight) {
+  root[isLight ? 'setAttribute' : 'removeAttribute']('data-theme', 'light');
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+}
+
+toggle.addEventListener('click', () => applyTheme(root.getAttribute('data-theme') !== 'light'));
+toggleMobile?.addEventListener('click', () => applyTheme(root.getAttribute('data-theme') !== 'light'));
+
+</script>
+<script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+
+</body>
+</html>
